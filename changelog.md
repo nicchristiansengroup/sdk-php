@@ -1,3 +1,6 @@
+0.8.2
+Added support for internal models
+
 0.8.1
 Fixed bad class name
 

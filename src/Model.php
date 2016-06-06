@@ -22,10 +22,13 @@ abstract class Model
      */
     public static function createIfExists($type, $data)
     {
-        $type = "\\Easir\\SDK\\Model\\" . StringHelper::studly($type);
+        $modelType = "\\Easir\\SDK\\Model\\" . StringHelper::studly($type);
+        $internalModelType = "\\Easir\\Internal\\SDK\\Model\\" . StringHelper::studly($type);
 
-        if (class_exists($type)) {
-            return new $type($data);
+        if (class_exists($modelType)) {
+            return new $modelType($data);
+        } elseif (class_exists($internalModelType)) {
+            return new $internalModelType($data);
         } else {
             return null;
         }

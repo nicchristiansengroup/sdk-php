@@ -1,7 +1,7 @@
 # EASI'R PHP SDK
 
-Current version `0.8.1`
-Supported API version `1.4.1`
+Current version `0.8.2`
+Supported API version `1.7.2`
 
 The purpose of this SDK is to standardise how our apps communicate with the EASI'R API.
 
@@ -17,27 +17,7 @@ To run tests `./vendor/bin/codecept run`
 ## Usage
 ### Installing
 
-Include into your project using composer `"easir/sdk"`. You need to define the repository in your composer.json too:
-
-```
-  {
-    "type": "package",
-    "package": {
-      "name": "easir/sdk",
-      "version": "0.8.1",
-      "source": {
-        "url": "git@github.com:LoyaltyFactory/sdk-php.git",
-        "type": "git",
-        "reference": "tags/0.8.1"
-      },
-      "autoload": {
-        "psr-4": {
-          "Easir\\SDK\\": "src/"
-        }
-      }
-    }
-  }
-```
+The package is registered with packagist so it can simply be installed with: `composer require easir/sdk`
 
 ### Implementation
 ```

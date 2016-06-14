@@ -1,19 +1,19 @@
 <?php
 
-namespace Easir\SDK\Request;
+namespace Easir\SDK\Request\HelpCenter;
 
 use Easir\SDK\Exception\RequestException;
-use Easir\SDK\Model\Cases;
+use Easir\SDK\Model\HelpCenter\Category;
+use Easir\SDK\Request\Model\HelpCenter\SetCategory as SetCategoryRM;
 use Easir\SDK\Request;
-use Easir\SDK\Request\Model\GetById;
 
-class GetCase extends Request
+class SetCategory extends Request
 {
-    protected $url = '/cases/%s';
-    public $method = 'GET';
+    protected $url = '/helpcenter/categories/%d';
+    public $method = 'POST';
     public $requiresAuth = true;
-    public $responseClass = Cases::class;
-    protected $modelClass = GetById::class;
+    public $responseClass = Category::class;
+    protected $modelClass = SetCategoryRM::class;
 
     public function getUrl()
     {

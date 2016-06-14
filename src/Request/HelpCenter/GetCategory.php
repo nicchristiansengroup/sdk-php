@@ -1,18 +1,18 @@
 <?php
 
-namespace Easir\SDK\Request;
+namespace Easir\SDK\Request\HelpCenter;
 
 use Easir\SDK\Exception\RequestException;
+use Easir\SDK\Model\HelpCenter\Category;
 use Easir\SDK\Request;
 use Easir\SDK\Request\Model\GetById;
-use Easir\SDK\Model\Team;
 
-class GetTeam extends Request
+class GetCategory extends Request
 {
-    protected $url = '/teams/%d';
+    protected $url = '/helpcenter/categories/%d';
     public $method = 'GET';
     public $requiresAuth = true;
-    public $responseClass = Team::class;
+    public $responseClass = Category::class;
     protected $modelClass = GetById::class;
 
     public function getUrl()
@@ -20,7 +20,7 @@ class GetTeam extends Request
         if (is_null($this->model)) {
             throw new RequestException("We can't make a request without a RequestModel", RequestException::MISSING_MODEL);
         } else {
-            return sprintf(parent::getUrl(), (int)$this->model->id);
+            return sprintf(parent::getUrl(), $this->model->id);
         }
     }
 }

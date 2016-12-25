@@ -17,7 +17,7 @@ abstract class Request
     public $options = array();
     public $requiresAuth = true;
     public $model = null;
-    public $responseClass = null;
+    public $responseClass = Response::class;
 
     protected $modelClass;
 

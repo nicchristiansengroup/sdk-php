@@ -10,7 +10,7 @@ use Easir\SDK\Model;
  *
  * @package Easir\SDK
  */
-abstract class Response
+class Response
 {
     use PopulatableFromData;
 
@@ -31,7 +31,9 @@ abstract class Response
 
         $responseData = json_decode($clientResponse->getBody()->getContents());
 
-        $response->populateFromData($responseData);
+        if ($responseData) {
+            $response->populateFromData($responseData);
+        }
 
         return $response;
     }

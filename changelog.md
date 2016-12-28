@@ -1,3 +1,6 @@
+0.9.1
+Added support to update a lead
+
 0.9.0
 Added support for webhooks
 Added partial support for leads

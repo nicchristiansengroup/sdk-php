@@ -1,5 +1,6 @@
 0.9.0
 Added support for webhooks
+Added partial support for leads
 
 0.8.3
 Removed support for some private APIs

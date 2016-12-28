@@ -10,4 +10,9 @@ use Easir\SDK\Request\Model;
 class GetById extends Model
 {
     public $id;
+
+    public function __construct($id = null)
+    {
+        parent::__construct(['id' => $id]);
+    }
 }

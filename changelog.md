@@ -1,3 +1,6 @@
+0.9.2
+Fixed class name collision
+
 0.9.1
 Added support to update a lead
 

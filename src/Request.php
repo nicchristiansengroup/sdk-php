@@ -3,7 +3,7 @@
 namespace Easir\SDK;
 
 use Easir\SDK\Exception\RequestException;
-use Easir\SDK\Request\Model;
+use Easir\SDK\Request\Model as RequestModel;
 
 /**
  * Request base class.
@@ -26,10 +26,10 @@ abstract class Request
     /**
      * Request constructor.
      *
-     * @param Model $model
+     * @param RequestModel $model
      * @throws RequestException
      */
-    public function __construct(Model $model = null)
+    public function __construct(RequestModel $model = null)
     {
         if (!is_null($model) && !is_a($model, $this->modelClass)) {
             throw new RequestException(sprintf("Bad model class (%s) expecting %s", get_class($model), $this->modelClass), RequestException::BAD_MODEL);

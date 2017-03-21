@@ -1,3 +1,6 @@
+0.10.0
+Added Plans
+
 0.9.2
 Fixed class name collision
 

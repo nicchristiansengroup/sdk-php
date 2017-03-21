@@ -19,5 +19,5 @@ class LocalizationTypes extends Response
             'countries' => 'country',
     ];
 
-    public $locales, $timezones, $currencies, $languages, $countries;
+    public $locales, $timezones, $currencies, $languages, $countries, $plan;
 }

@@ -1,3 +1,6 @@
+0.10.1
+Added account_id to CreateLead request model.
+
 0.10.0
 Added Plans
 

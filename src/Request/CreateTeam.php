@@ -13,9 +13,24 @@ use Easir\SDK\Model\Team;
  */
 class CreateTeam extends Request
 {
+    /**
+     * @var string
+     */
     protected $url = '/teams';
+    /**
+     * @var string
+     */
     public $method = 'POST';
+    /**
+     * @var bool
+     */
     public $requiresAuth = true;
+    /**
+     * @var string
+     */
     public $responseClass = Team::class;
+    /**
+     * @var string
+     */
     protected $modelClass = TeamRequestModel::class;
 }

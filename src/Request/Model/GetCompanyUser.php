@@ -11,5 +11,12 @@ use Easir\SDK\Request\Model;
  */
 class GetCompanyUser extends Model
 {
-    public $companyId, $id;
+    /**
+     * @var integer
+     */
+    public $companyId;
+    /**
+     * @var integer
+     */
+    public $id;
 }

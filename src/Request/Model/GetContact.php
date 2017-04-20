@@ -11,5 +11,12 @@ use Easir\SDK\Request\Model;
  */
 class GetContact extends Model
 {
-    public $contactId, $id;
+    /**
+     * @var integer
+     */
+    public $contactId;
+    /**
+     * @var integer
+     */
+    public $id;
 }

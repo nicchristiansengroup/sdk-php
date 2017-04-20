@@ -11,5 +11,32 @@ use Easir\SDK\Request\Model;
  */
 class ListCompanyTeams extends Model
 {
-    public $id, $searchTerm = "", $page = 1, $perPage = 15, $team_type = "", $sort_by = "", $sort_direction = 'desc';
+    /**
+     * @var integer
+     */
+    public $id;
+    /**
+     * @var string
+     */
+    public $searchTerm = '';
+    /**
+     * @var integer
+     */
+    public $page = 1;
+    /**
+     * @var integer
+     */
+    public $perPage = 15;
+    /**
+     * @var string
+     */
+    public $team_type = '';
+    /**
+     * @var string
+     */
+    public $sort_by = '';
+    /**
+     * @var string
+     */
+    public $sort_direction = 'desc';
 }

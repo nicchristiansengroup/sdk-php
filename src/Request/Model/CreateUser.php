@@ -11,6 +11,40 @@ use Easir\SDK\Request\Model;
  */
 class CreateUser extends Model
 {
-    public $first_name, $last_name, $email, $job_title, $timezone = "Europe/Copenhagen", $phone_number,
-        $password, $team_id, $locale = 'da-DK';
+    /**
+     * @var string
+     */
+    public $first_name;
+    /**
+     * @var string
+     */
+    public $last_name;
+    /**
+     * @var string
+     */
+    public $email;
+    /**
+     * @var string
+     */
+    public $job_title;
+    /**
+     * @var string
+     */
+    public $timezone = "Europe/Copenhagen";
+    /**
+     * @var string
+     */
+    public $phone_number;
+    /**
+     * @var string
+     */
+    public $password;
+    /**
+     * @var integer
+     */
+    public $team_id;
+    /**
+     * @var string
+     */
+    public $locale = 'da-DK';
 }

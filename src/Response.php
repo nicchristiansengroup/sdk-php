@@ -3,7 +3,7 @@
 namespace Easir\SDK;
 
 use GuzzleHttp\Psr7\Response as GuzzleResponse;
-use Easir\SDK\Model;
+//use Easir\SDK\Model;
 
 /**
  * Response base class

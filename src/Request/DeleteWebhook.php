@@ -5,7 +5,6 @@ namespace Easir\SDK\Request;
 use Easir\SDK\Exception\RequestException;
 use Easir\SDK\Request;
 use Easir\SDK\Request\Model\GetById;
-use Easir\SDK\Response\Generic;
 
 class DeleteWebhook extends Request
 {

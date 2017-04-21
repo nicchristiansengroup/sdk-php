@@ -2,6 +2,8 @@
 
 namespace Easir\SDK\Response;
 
+use Easir\SDK\Model\Activity;
+use Easir\SDK\Model\Pagination;
 use Easir\SDK\Response;
 
 /**
@@ -10,7 +12,16 @@ use Easir\SDK\Response;
  */
 class ListCompanyActivities extends Response
 {
+    /**
+     * @var array
+     */
     protected $collections = ['data' => 'activity'];
-
-    public $data, $pagination;
+    /**
+     * @var Activity[]
+     */
+    public $data;
+    /**
+     * @var Pagination
+     */
+    public $pagination;
 }

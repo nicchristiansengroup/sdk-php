@@ -2,6 +2,7 @@
 
 namespace Easir\SDK\Request;
 
+use Easir\SDK\Exception\RequestException;
 use Easir\SDK\Request;
 use Easir\SDK\Request\Model\ListCompanyUsers as ListCompanyUsersModel;
 use Easir\SDK\Response\ListCompanyUsers as ListCompanyUsersResponse;
@@ -42,6 +43,11 @@ class ListCompanyUsers extends Request
     {
         $this->checkModel();
 
-        return sprintf(parent::getUrl(), (int)$this->model->id, (int)$this->model->page, (int)$this->model->perPage, urlencode((string)$this->model->searchTerm));
+        return sprintf(parent::getUrl(),
+            (int)$this->model->id,
+            (int)$this->model->page,
+            (int)$this->model->perPage,
+            urlencode((string)$this->model->searchTerm)
+        );
     }
 }

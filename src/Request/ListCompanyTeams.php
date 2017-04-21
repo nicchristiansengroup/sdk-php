@@ -2,6 +2,7 @@
 
 namespace Easir\SDK\Request;
 
+use Easir\SDK\Exception\RequestException;
 use Easir\SDK\Request;
 use Easir\SDK\Request\Model\ListCompanyTeams as ListCompanyTeamsModel;
 use Easir\SDK\Response\ListCompanyTeams as ListCompanyTeamsResponse;

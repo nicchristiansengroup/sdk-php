@@ -2,6 +2,7 @@
 
 namespace Easir\SDK\Request;
 
+use Easir\SDK\Exception\RequestException;
 use Easir\SDK\Request;
 use Easir\SDK\Request\Model\ListCompanyCases as ListCompanyCasesModel;
 use Easir\SDK\Response\ListCompanyCases as ListCompanyCasesResponse;

@@ -2,6 +2,7 @@
 
 namespace Easir\SDK\Request;
 
+use Easir\SDK\Exception\RequestException;
 use Easir\SDK\Model\Company;
 use Easir\SDK\Request;
 use Easir\SDK\Request\Model\GetById;
@@ -29,6 +30,10 @@ class GetCompany extends Request
      */
     protected $modelClass = GetById::class;
 
+    /**
+     * @throws RequestException
+     * @return string
+     */
     public function getUrl()
     {
         $this->checkModel();

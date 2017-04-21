@@ -19,10 +19,18 @@ class Auth extends Model
      * @var string
      */
     public $client_secret;
-
+    /**
+     * @var string
+     */
     // Only used for grantType=refresh_token
     public $refresh_token;
-
+    /**
+     * @var string
+     */
     // Only used for grantType=password
-    public $username, $password;
+    public $username;
+    /**
+     * @var string
+     */
+    public $password;
 }

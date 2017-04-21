@@ -2,6 +2,7 @@
 
 namespace Easir\SDK\Request;
 
+use Easir\SDK\Exception\RequestException;
 use Easir\SDK\Model\Cases;
 use Easir\SDK\Request;
 use Easir\SDK\Request\Model\GetById;

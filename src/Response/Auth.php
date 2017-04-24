@@ -10,5 +10,20 @@ use Easir\SDK\Response;
  */
 class Auth extends Response
 {
-    public $access_token, $token_type, $expires_in, $refresh_token;
+    /**
+     * @var string
+     */
+    public $access_token;
+    /**
+     * @var string
+     */
+    public $token_type;
+    /**
+     * @var string
+     */
+    public $expires_in;
+    /**
+     * @var string
+     */
+    public $refresh_token;
 }

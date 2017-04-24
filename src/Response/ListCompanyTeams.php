@@ -2,6 +2,8 @@
 
 namespace Easir\SDK\Response;
 
+use Easir\SDK\Model\Pagination;
+use Easir\SDK\Model\Team;
 use Easir\SDK\Response;
 
 /**
@@ -10,7 +12,16 @@ use Easir\SDK\Response;
  */
 class ListCompanyTeams extends Response
 {
+    /**
+     * @var array
+     */
     protected $collections = ['data' => 'team'];
-
-    public $data, $pagination;
+    /**
+     * @var Team[]
+     */
+    public $data;
+    /**
+     * @var Pagination
+     */
+    public $pagination;
 }

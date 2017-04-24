@@ -11,11 +11,26 @@ use Easir\SDK\Request\Model;
  */
 class Auth extends Model
 {
-    public $client_id, $client_secret;
-
+    /**
+     * @var integer
+     */
+    public $client_id;
+    /**
+     * @var string
+     */
+    public $client_secret;
+    /**
+     * @var string
+     */
     // Only used for grantType=refresh_token
     public $refresh_token;
-
+    /**
+     * @var string
+     */
     // Only used for grantType=password
-    public $username, $password;
+    public $username;
+    /**
+     * @var string
+     */
+    public $password;
 }

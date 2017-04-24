@@ -9,18 +9,35 @@ use Easir\SDK\Model\Team;
 
 class GetTeam extends Request
 {
+    /**
+     * @var string
+     */
     protected $url = '/teams/%d';
+    /**
+     * @var string
+     */
     public $method = 'GET';
+    /**
+     * @var bool
+     */
     public $requiresAuth = true;
+    /**
+     * @var string
+     */
     public $responseClass = Team::class;
+    /**
+     * @var string
+     */
     protected $modelClass = GetById::class;
 
+    /**
+     * @throws RequestException
+     * @return string
+     */
     public function getUrl()
     {
-        if (is_null($this->model)) {
-            throw new RequestException("We can't make a request without a RequestModel", RequestException::MISSING_MODEL);
-        } else {
-            return sprintf(parent::getUrl(), (int)$this->model->id);
-        }
+        $this->checkModel();
+
+        return sprintf(parent::getUrl(), (int)$this->model->id);
     }
 }

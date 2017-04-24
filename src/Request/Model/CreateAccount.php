@@ -11,5 +11,24 @@ use Easir\SDK\Request\Model;
  */
 class CreateAccount extends Model
 {
-    public $id, $user_id, $team_id, $fixed_fields, $custom_fields;
+    /**
+     * @var integer
+     */
+    public $id;
+    /**
+     * @var integer
+     */
+    public $user_id;
+    /**
+     * @var integer
+     */
+    public $team_id;
+    /**
+     * @var array
+     */
+    public $fixed_fields;
+    /**
+     * @var array
+     */
+    public $custom_fields;
 }

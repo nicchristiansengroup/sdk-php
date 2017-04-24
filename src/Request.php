@@ -12,15 +12,37 @@ use Easir\SDK\Request\Model as RequestModel;
  */
 abstract class Request
 {
+    /**
+     * @var string
+     */
     protected $url;
+    /**
+     * @var string
+     */
     public $method = "GET";
+    /**
+     * @var array
+     */
     public $options = array();
+    /**
+     * @var bool
+     */
     public $requiresAuth = true;
+    /**
+     * @var string|null
+     */
     public $model = null;
+    /**
+     * @var string
+     */
     public $responseClass = Response::class;
-
+    /**
+     * @var string
+     */
     protected $modelClass;
-
+    /**
+     * @var array
+     */
     private $allowedMethods = array("GET", "POST", "PUT", "DELETE");
 
     /**
@@ -60,9 +82,23 @@ abstract class Request
         }
     }
 
-
+    /**
+     * @return string
+     */
     public function getUrl()
     {
         return $this->url;
+    }
+
+    /**
+     * Perform validation on the request model
+     *
+     * @throws RequestException
+     */
+    protected function checkModel()
+    {
+        if (is_null($this->model)) {
+            throw new RequestException('We can\'t make a request without a RequestModel', RequestException::MISSING_MODEL);
+        }
     }
 }

@@ -2,8 +2,6 @@
 
 namespace Easir\SDK\Request;
 
-use Easir\SDK\Request;
-
 /**
  * Request class for getting the localisation types
  *
@@ -11,5 +9,8 @@ use Easir\SDK\Request;
  */
 class GetCompanyLocalizationTypes extends GetLocalizationTypes
 {
+    /**
+     * @var string
+     */
     protected $urlSuffix = '/companies';
 }

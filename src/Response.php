@@ -3,7 +3,6 @@
 namespace Easir\SDK;
 
 use GuzzleHttp\Psr7\Response as GuzzleResponse;
-use Easir\SDK\Model;
 
 /**
  * Response base class
@@ -20,7 +19,7 @@ class Response
      * Create an instance from the Guzzle client response object
      *
      * @static
-     * @param \Easir\SDK\Response $clientResponse
+     * @param GuzzleResponse $clientResponse
      * @return static
      */
     public static function createFromClientResponse(GuzzleResponse $clientResponse)

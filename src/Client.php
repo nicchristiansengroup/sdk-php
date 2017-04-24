@@ -14,7 +14,8 @@ class Client extends GuzzleClient
     /**
      * Client constructor.
      *
-     * @param string $endpoint
+     * @param string|null $endpoint
+     * @param string|null $accessToken
      */
     public function __construct($endpoint = null, $accessToken = null)
     {
@@ -27,7 +28,10 @@ class Client extends GuzzleClient
     /**
      * Execute request to the EASI'R API
      *
+     * @param Request $request
+     * @return mixed
      * @throws ClientException
+     * @throws \Exception
      */
     public function execute(Request $request)
     {
@@ -67,7 +71,6 @@ class Client extends GuzzleClient
             // We don't have a response object so lets just show the raw json response
             $response = json_decode($clientResponse->getBody()->getContents());
         }
-
 
         return $response;
     }

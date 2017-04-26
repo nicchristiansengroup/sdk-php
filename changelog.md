@@ -1,3 +1,6 @@
+0.10.2
+Added support for PUT /accounts/{accountId}/contacts/{contactId}
+
 0.10.1
 Added account_id to CreateLead request model.
 

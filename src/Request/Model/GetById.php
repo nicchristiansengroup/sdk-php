@@ -9,6 +9,9 @@ use Easir\SDK\Request\Model;
  */
 class GetById extends Model
 {
+    /**
+     * @var integer
+     */
     public $id;
 
     public function __construct($id = null)

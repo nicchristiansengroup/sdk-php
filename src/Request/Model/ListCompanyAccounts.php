@@ -11,5 +11,8 @@ use Easir\SDK\Request\Model;
  */
 class ListCompanyAccounts extends Model
 {
-    public $searchTerm = "";
+    /**
+     * @var string
+     */
+    public $searchTerm = '';
 }

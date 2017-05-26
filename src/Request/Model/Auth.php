@@ -4,18 +4,26 @@ namespace Easir\SDK\Request\Model;
 
 use Easir\SDK\Request\Model;
 
-/**
- * The request model for Auth
- *
- * @package Easir\SDK\Request\Model
- */
 class Auth extends Model
 {
-    public $client_id, $client_secret;
-
-    // Only used for grantType=refresh_token
+    /**
+     * @var integer
+     */
+    public $client_id;
+    /**
+     * @var string
+     */
+    public $client_secret;
+    /**
+     * @var string
+     */
     public $refresh_token;
-
-    // Only used for grantType=password
-    public $username, $password;
+    /**
+     * @var string
+     */
+    public $username;
+    /**
+     * @var string
+     */
+    public $password;
 }

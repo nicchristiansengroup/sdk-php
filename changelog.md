@@ -1,3 +1,15 @@
+0.10.2
+Added support for PUT /accounts/{accountId}/contacts/{contactId}
+
+0.10.1
+Added account_id to CreateLead request model.
+
+0.10.0
+Added Plans
+
+0.9.2
+Fixed class name collision
+
 0.9.1
 Added support to update a lead
 

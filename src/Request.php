@@ -3,7 +3,7 @@
 namespace Easir\SDK;
 
 use Easir\SDK\Exception\RequestException;
-use Easir\SDK\Request\Model;
+use Easir\SDK\Request\Model as RequestModel;
 
 /**
  * Request base class.
@@ -12,24 +12,46 @@ use Easir\SDK\Request\Model;
  */
 abstract class Request
 {
+    /**
+     * @var string
+     */
     protected $url;
+    /**
+     * @var string
+     */
     public $method = "GET";
+    /**
+     * @var array
+     */
     public $options = array();
+    /**
+     * @var bool
+     */
     public $requiresAuth = true;
+    /**
+     * @var string|null
+     */
     public $model = null;
+    /**
+     * @var string
+     */
     public $responseClass = Response::class;
-
+    /**
+     * @var string
+     */
     protected $modelClass;
-
+    /**
+     * @var array
+     */
     private $allowedMethods = array("GET", "POST", "PUT", "DELETE");
 
     /**
      * Request constructor.
      *
-     * @param Model $model
+     * @param RequestModel $model
      * @throws RequestException
      */
-    public function __construct(Model $model = null)
+    public function __construct(RequestModel $model = null)
     {
         if (!is_null($model) && !is_a($model, $this->modelClass)) {
             throw new RequestException(sprintf("Bad model class (%s) expecting %s", get_class($model), $this->modelClass), RequestException::BAD_MODEL);
@@ -60,9 +82,23 @@ abstract class Request
         }
     }
 
-
+    /**
+     * @return string
+     */
     public function getUrl()
     {
         return $this->url;
+    }
+
+    /**
+     * Perform validation on the request model
+     *
+     * @throws RequestException
+     */
+    protected function checkModel()
+    {
+        if (is_null($this->model)) {
+            throw new RequestException('We can\'t make a request without a RequestModel', RequestException::MISSING_MODEL);
+        }
     }
 }

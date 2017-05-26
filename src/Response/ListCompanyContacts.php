@@ -2,6 +2,8 @@
 
 namespace Easir\SDK\Response;
 
+use Easir\SDK\Model\Contact;
+use Easir\SDK\Model\Pagination;
 use Easir\SDK\Response;
 
 /**
@@ -10,7 +12,16 @@ use Easir\SDK\Response;
  */
 class ListCompanyContacts extends Response
 {
+    /**
+     * @var array
+     */
     protected $collections = ['data' => 'contact'];
-
-    public $data, $pagination;
+    /**
+     * @var Contact[]
+     */
+    public $data;
+    /**
+     * @var Pagination
+     */
+    public $pagination;
 }

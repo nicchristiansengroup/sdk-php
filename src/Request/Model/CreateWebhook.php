@@ -6,5 +6,20 @@ use Easir\SDK\Request\Model;
 
 class CreateWebhook extends Model
 {
-    public $target_url, $event, $scope = "global", $verification_token;
+    /**
+     * @var string
+     */
+    public $target_url;
+    /**
+     * @var string
+     */
+    public $event;
+    /**
+     * @var string
+     */
+    public $scope = 'global';
+    /**
+     * @var string
+     */
+    public $verification_token;
 }

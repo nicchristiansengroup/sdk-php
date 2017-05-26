@@ -13,9 +13,24 @@ use Easir\SDK\Model\Account;
  */
 class CreateAccount extends Request
 {
+    /**
+     * @var string
+     */
     protected $url = '/accounts';
+    /**
+     * @var string
+     */
     public $method = 'POST';
+    /**
+     * @var bool
+     */
     public $requiresAuth = true;
+    /**
+     * @var string
+     */
     public $responseClass = Account::class;
+    /**
+     * @var string
+     */
     protected $modelClass = CreateAccountRequestModel::class;
 }

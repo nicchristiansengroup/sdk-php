@@ -1,3 +1,10 @@
+0.11.0
+Added support for GET /relations-paths
+Added support for GET /fields/account
+Added support for GET /fields/b2c_account
+Added support for GET /fields/contact
+Added support for GET /fields/b2c_contact
+
 0.10.2
 Added support for PUT /accounts/{accountId}/contacts/{contactId}
 

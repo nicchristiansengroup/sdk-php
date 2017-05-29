@@ -4,7 +4,6 @@ namespace Easir\SDK\Request;
 
 use Easir\SDK\Exception\RequestException;
 use Easir\SDK\Request;
-use Easir\SDK\Request\Model\ListFields as ListFieldsModel;
 use Easir\SDK\Response\ListFields as ListFieldsResponse;
 
 class GetFields extends Request
@@ -29,10 +28,6 @@ class GetFields extends Request
      * @var string
      */
     public $responseClass = ListFieldsResponse::class;
-    /**
-     * @var string
-     */
-    protected $modelClass = ListFieldsModel::class;
 
     /**
      * @throws RequestException

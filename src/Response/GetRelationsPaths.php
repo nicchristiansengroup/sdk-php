@@ -5,10 +5,6 @@ namespace Easir\SDK\Response;
 use Easir\SDK\Model\RelationsPath;
 use Easir\SDK\Response;
 
-/**
- * Class ListCompanyUsers
- * @package Easir\SDK\Response
- */
 class GetRelationsPaths extends Response
 {
     /**

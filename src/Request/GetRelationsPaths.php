@@ -4,7 +4,6 @@ namespace Easir\SDK\Request;
 
 use Easir\SDK\Exception\RequestException;
 use Easir\SDK\Request;
-use Easir\SDK\Request\Model\GetRelationsPaths as RelationsPathsModel;
 use Easir\SDK\Response\GetRelationsPaths as RelationsPathsResponse;
 
 class GetRelationsPaths extends Request
@@ -25,10 +24,6 @@ class GetRelationsPaths extends Request
      * @var string
      */
     public $responseClass = RelationsPathsResponse::class;
-    /**
-     * @var string
-     */
-    protected $modelClass = RelationsPathsModel::class;
 
     /**
      * @throws RequestException

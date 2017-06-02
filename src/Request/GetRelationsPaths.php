@@ -31,8 +31,6 @@ class GetRelationsPaths extends Request
      */
     public function getUrl()
     {
-        $this->checkModel();
-
         return parent::getUrl();
     }
 }

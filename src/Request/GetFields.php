@@ -35,8 +35,6 @@ class GetFields extends Request
      */
     public function getUrl()
     {
-        $this->checkModel();
-
         return $this->url . $this->urlSuffix;
     }
 }

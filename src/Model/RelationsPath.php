@@ -2,9 +2,9 @@
 
 namespace Easir\SDK\Model;
 
-use Easir\SDK\Model;
+use Easir\SDK\Response;
 
-class RelationsPath extends Model
+class RelationsPath extends Response
 {
     protected $collections = ['activity_types' => 'activity_type'];
 

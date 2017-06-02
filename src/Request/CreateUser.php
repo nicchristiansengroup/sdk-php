@@ -7,11 +7,6 @@ use Easir\SDK\Request;
 use Easir\SDK\Request\Model\CreateUser as UserRequestModel;
 use Easir\SDK\Model\User;
 
-/**
- * Request class for creating users
- *
- * @package Easir\SDK\Request
- */
 class CreateUser extends Request
 {
     /**
@@ -43,6 +38,6 @@ class CreateUser extends Request
     {
         $this->checkModel();
 
-        return sprintf(parent::getUrl(), (int)$this->model->id);
+        return sprintf(parent::getUrl(), (int)$this->model->company_id);
     }
 }

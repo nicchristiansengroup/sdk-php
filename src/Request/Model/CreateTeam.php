@@ -4,11 +4,6 @@ namespace Easir\SDK\Request\Model;
 
 use Easir\SDK\Request\Model;
 
-/**
- * The request model for CreateTeam
- *
- * @package Easir\SDK\Request\Model
- */
 class CreateTeam extends Model
 {
     /**
@@ -62,5 +57,13 @@ class CreateTeam extends Model
     /**
      * @var string
      */
+    public $currency;
+    /**
+     * @var string
+     */
     public $team_type;
+    /**
+     * @var bool
+     */
+    public $use_social_lookup;
 }

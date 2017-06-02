@@ -6,6 +6,56 @@ use Easir\SDK\Request\Model;
 
 class CreateLead extends Model
 {
-    public $lead_type_id, $team_id, $agency_team_id, $lead_source, $b2c = true, $expires_at, $interest,
-        $lead_data, $lead_user, $external_weight, $account, $contact, $account_id;
+    /**
+     * @var string
+     */
+    public $account_id;
+    /**
+     * @var array
+     */
+    public $account;
+    /**
+     * @var bool
+     */
+    public $b2c = true;
+    /**
+     * @var string
+     */
+    public $contact_id;
+    /**
+     * @var array
+     */
+    public $contact;
+    /**
+     * @var string
+     */
+    public $lead_source;
+    /**
+     * @var string
+     */
+    public $lead_type_id;
+    /**
+     * @var integer
+     */
+    public $team_id;
+    /**
+     * @var integer
+     */
+    public $agency_team_id;
+    /**
+     * @var string|null
+     */
+    public $expires_at;
+    /**
+     * @var string
+     */
+    public $interest;
+    /**
+     * @var array
+     */
+    public $lead_data;
+    /**
+     * @var integer
+     */
+    public $external_weight;
 }

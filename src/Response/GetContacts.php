@@ -2,18 +2,18 @@
 
 namespace Easir\SDK\Response;
 
-use Easir\SDK\Model\Pagination;
-use Easir\SDK\Model\Team;
+use Easir\SDK\Model\Contact;
 use Easir\SDK\Response;
+use Easir\SDK\Model\Pagination;
 
-class ListCompanyTeams extends Response
+class GetContacts extends Response
 {
     /**
      * @var array
      */
-    protected $collections = ['data' => 'team'];
+    protected $collections = ['data' => 'contact'];
     /**
-     * @var Team[]
+     * @var Contact[]
      */
     public $data;
     /**

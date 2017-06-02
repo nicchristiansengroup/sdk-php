@@ -4,11 +4,6 @@ namespace Easir\SDK\Request\Model;
 
 use Easir\SDK\Request\Model;
 
-/**
- * The request model for CreateAccount
- *
- * @package Easir\SDK\Request\Model
- */
 class CreateAccount extends Model
 {
     /**

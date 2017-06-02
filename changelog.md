@@ -1,3 +1,14 @@
+0.12.0
+Added support for POST /fields/custom
+Added support for POST /relations-paths
+Added support for GET /automated-communications
+Added support for GET /contacts
+Added support for GET /lead-types
+Added support for GET /roles
+Added support for GET /teams
+Added support for GET /templates
+
+
 0.11.0
 Added support for GET /relations-paths
 Added support for GET /fields/account

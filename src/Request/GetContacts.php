@@ -4,15 +4,15 @@ namespace Easir\SDK\Request;
 
 use Easir\SDK\Exception\RequestException;
 use Easir\SDK\Request;
-use Easir\SDK\Request\Model\ListCompanyAccounts as ListCompanyAccountsModel;
-use Easir\SDK\Response\ListCompanyAccounts as ListCompanyAccountsResponse;
+use Easir\SDK\Response\GetContacts as GetContactsResponse;
+use Easir\SDK\Request\Model\GetContacts as GetContactsModel;
 
-class ListCompanyAccounts extends Request
+class GetContacts extends Request
 {
     /**
      * @var string
      */
-    protected $url = '/accounts?page=%d&per_page=%d&q=%s';
+    protected $url = '/contacts?page=%d&per_page=%d&q=%s';
     /**
      * @var string
      */
@@ -24,11 +24,11 @@ class ListCompanyAccounts extends Request
     /**
      * @var string
      */
-    public $responseClass = ListCompanyAccountsResponse::class;
+    public $responseClass = GetContactsResponse::class;
     /**
      * @var string
      */
-    protected $modelClass = ListCompanyAccountsModel::class;
+    protected $modelClass = GetContactsModel::class;
 
     /**
      * @throws RequestException

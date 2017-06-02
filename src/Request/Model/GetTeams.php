@@ -4,12 +4,12 @@ namespace Easir\SDK\Request\Model;
 
 use Easir\SDK\Request\Model;
 
-class ListCompanyUsers extends Model
+class GetTeams extends Model
 {
     /**
      * @var integer
      */
-    public $id;
+    public $group_id;
     /**
      * @var string
      */
@@ -22,4 +22,16 @@ class ListCompanyUsers extends Model
      * @var integer
      */
     public $perPage = 15;
+    /**
+     * @var string
+     */
+    public $team_type = '';
+    /**
+     * @var string
+     */
+    public $sort_by = '';
+    /**
+     * @var string
+     */
+    public $sort_direction = 'desc';
 }

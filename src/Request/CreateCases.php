@@ -4,13 +4,8 @@ namespace Easir\SDK\Request;
 
 use Easir\SDK\Request;
 use Easir\SDK\Request\Model\CreateCase as CreateCasesRequestModel;
-use Easir\SDK\Model\Cases;
+use Easir\SDK\Model\CaseObject;
 
-/**
- * Request class for creating cases
- *
- * @package Easir\SDK\Request
- */
 class CreateCases extends Request
 {
     /**
@@ -28,7 +23,7 @@ class CreateCases extends Request
     /**
      * @var string
      */
-    public $responseClass = Cases::class;
+    public $responseClass = CaseObject::class;
     /**
      * @var string
      */

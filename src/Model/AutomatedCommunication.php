@@ -2,9 +2,9 @@
 
 namespace Easir\SDK\Model;
 
-use Easir\SDK\Response;
+use Easir\SDK\Model;
 
-class AutomatedCommunication extends Response
+class AutomatedCommunication extends Model
 {
     protected $collections = ['communications' => 'communication'];
 

@@ -6,10 +6,6 @@ use Easir\SDK\Model\Pagination;
 use Easir\SDK\Model\User;
 use Easir\SDK\Response;
 
-/**
- * Class ListCompanyUsers
- * @package Easir\SDK\Response
- */
 class ListCompanyUsers extends Response
 {
     /**

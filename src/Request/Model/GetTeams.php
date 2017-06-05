@@ -2,26 +2,12 @@
 
 namespace Easir\SDK\Request\Model;
 
-use Easir\SDK\Request\Model;
-
-class GetTeams extends Model
+class GetTeams extends Search
 {
     /**
      * @var integer
      */
     public $group_id;
-    /**
-     * @var string
-     */
-    public $searchTerm = '';
-    /**
-     * @var integer
-     */
-    public $page = 1;
-    /**
-     * @var integer
-     */
-    public $perPage = 15;
     /**
      * @var string
      */

@@ -5,7 +5,7 @@ namespace Easir\SDK\Request;
 use Easir\SDK\Exception\RequestException;
 use Easir\SDK\Request;
 use Easir\SDK\Response\GetContacts as GetContactsResponse;
-use Easir\SDK\Request\Model\GetContacts as GetContactsModel;
+use Easir\SDK\Request\Model\Search as GetContactsModel;
 
 class GetContacts extends Request
 {

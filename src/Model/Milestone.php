@@ -7,8 +7,6 @@ use Easir\SDK\Model;
 class Milestone extends Model
 {
     /**
-     * List of possible collection names and their types
-     *
      * @var array
      */
     protected $collections = [
@@ -41,19 +39,19 @@ class Milestone extends Model
      */
     public $suggest_task_after;
     /**
-     * @var array
+     * @var ContentSuggestion[]
      */
     public $content_suggestions;
     /**
-     * @var array
+     * @var Step[]
      */
     public $extra_step;
     /**
-     * @var array|string ???
+     * @var array
      */
     public $additional_steps;
     /**
-     * @var array
+     * @var AutomatedCommunication[]
      */
     public $automated_communications;
 }

@@ -49,5 +49,5 @@ class CreateUser extends Model
     /**
      * @var bool
      */
-    public $system_user;
+    public $system_user = false;
 }

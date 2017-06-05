@@ -42,9 +42,9 @@ class GetTeams extends Request
             (int)$this->model->page,
             (int)$this->model->perPage,
             urlencode((string)$this->model->searchTerm),
-            urlencode((string)$this->model->team_type),
-            urlencode((string)$this->model->sort_by),
-            urlencode((string)$this->model->sort_direction),
+            (string)$this->model->team_type,
+            (string)$this->model->sort_by,
+            (string)$this->model->sort_direction,
             (int)$this->model->group_id
         );
     }

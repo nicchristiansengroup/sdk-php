@@ -8,6 +8,10 @@ use Easir\SDK\Request\Model;
 
 class CreateContact extends Model
 {
+    protected $collections = [
+        'fixed_fields' => 'fixed_field',
+        'custom_fields' => 'custom_field'
+    ];
     /**
      * @var integer
      */

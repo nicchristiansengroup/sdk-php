@@ -4,7 +4,10 @@ namespace Easir\SDK\Request\Model;
 
 use Easir\SDK\Request\Model;
 
-class GetAutomatedCommunications extends Model
+/**
+ * Generic Search class
+ */
+class Search extends Model
 {
     /**
      * @var string

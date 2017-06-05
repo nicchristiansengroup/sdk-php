@@ -39,7 +39,7 @@ class ListCompanyUsers extends Request
         $this->checkModel();
 
         return sprintf(parent::getUrl(),
-            (int)$this->model->id,
+            (int)$this->model->company_id,
             (int)$this->model->page,
             (int)$this->model->perPage,
             urlencode((string)$this->model->searchTerm)

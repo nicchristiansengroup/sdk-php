@@ -4,7 +4,7 @@ namespace Easir\SDK\Request;
 
 use Easir\SDK\Exception\RequestException;
 use Easir\SDK\Request;
-use Easir\SDK\Request\Model\GetAutomatedCommunications as GetAutomatedCommunicationsModel;
+use Easir\SDK\Request\Model\Search as GetAutomatedCommunicationsModel;
 use Easir\SDK\Response\GetAutomatedCommunications as GetAutomatedCommunicationsResponse;
 
 class GetAutomatedCommunications extends Request

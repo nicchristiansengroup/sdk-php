@@ -9,10 +9,6 @@ class CreateAccount extends Model
     /**
      * @var integer
      */
-    public $id;
-    /**
-     * @var integer
-     */
     public $user_id;
     /**
      * @var integer

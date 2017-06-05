@@ -35,7 +35,7 @@ class CaseObject extends Response
      */
     public $relations_path;
     /**
-     * @var Milestone
+     * @var Milestone[]
      */
     public $milestones;
     /**

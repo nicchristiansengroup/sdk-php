@@ -5,7 +5,7 @@ namespace Easir\SDK\Request;
 use Easir\SDK\Exception\RequestException;
 use Easir\SDK\Request;
 use Easir\SDK\Response\GetContacts as GetContactsResponse;
-use Easir\SDK\Request\Model\Search as GetContactsModel;
+use Easir\SDK\Request\Model\Search;
 
 class GetContacts extends Request
 {
@@ -28,7 +28,7 @@ class GetContacts extends Request
     /**
      * @var string
      */
-    protected $modelClass = GetContactsModel::class;
+    protected $modelClass = Search::class;
 
     /**
      * @throws RequestException

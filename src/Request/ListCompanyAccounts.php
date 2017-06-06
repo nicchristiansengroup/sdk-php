@@ -4,7 +4,7 @@ namespace Easir\SDK\Request;
 
 use Easir\SDK\Exception\RequestException;
 use Easir\SDK\Request;
-use Easir\SDK\Request\Model\Search as ListCompanyAccountsModel;
+use Easir\SDK\Request\Model\Search;
 use Easir\SDK\Response\ListCompanyAccounts as ListCompanyAccountsResponse;
 
 class ListCompanyAccounts extends Request
@@ -28,7 +28,7 @@ class ListCompanyAccounts extends Request
     /**
      * @var string
      */
-    protected $modelClass = ListCompanyAccountsModel::class;
+    protected $modelClass = Search::class;
 
     /**
      * @throws RequestException

@@ -4,7 +4,7 @@ namespace Easir\SDK\Request;
 
 use Easir\SDK\Exception\RequestException;
 use Easir\SDK\Request;
-use Easir\SDK\Request\Model\Search as GetTemplatesModel;
+use Easir\SDK\Request\Model\Search;
 use Easir\SDK\Response\GetTemplates as GetTemplatesResponse;
 
 class GetTemplates extends Request
@@ -28,7 +28,7 @@ class GetTemplates extends Request
     /**
      * @var string
      */
-    protected $modelClass = GetTemplatesModel::class;
+    protected $modelClass = Search::class;
 
     /**
      * @throws RequestException

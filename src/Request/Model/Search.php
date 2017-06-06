@@ -4,9 +4,6 @@ namespace Easir\SDK\Request\Model;
 
 use Easir\SDK\Request\Model;
 
-/**
- * Generic Search class
- */
 class Search extends Model
 {
     /**

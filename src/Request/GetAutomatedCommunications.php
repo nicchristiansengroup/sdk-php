@@ -4,7 +4,7 @@ namespace Easir\SDK\Request;
 
 use Easir\SDK\Exception\RequestException;
 use Easir\SDK\Request;
-use Easir\SDK\Request\Model\Search as GetAutomatedCommunicationsModel;
+use Easir\SDK\Request\Model\Search;
 use Easir\SDK\Response\GetAutomatedCommunications as GetAutomatedCommunicationsResponse;
 
 class GetAutomatedCommunications extends Request
@@ -28,7 +28,7 @@ class GetAutomatedCommunications extends Request
     /**
      * @var string
      */
-    protected $modelClass = GetAutomatedCommunicationsModel::class;
+    protected $modelClass = Search::class;
 
     /**
      * @throws RequestException

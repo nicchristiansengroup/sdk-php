@@ -4,7 +4,7 @@ namespace Easir\SDK\Request;
 
 use Easir\SDK\Exception\RequestException;
 use Easir\SDK\Request;
-use Easir\SDK\Request\Model\Search as GetRolesModel;
+use Easir\SDK\Request\Model\Search;
 use Easir\SDK\Response\GetRoles as GetRolesResponse;
 
 class GetRoles extends Request
@@ -28,7 +28,7 @@ class GetRoles extends Request
     /**
      * @var string
      */
-    protected $modelClass = GetRolesModel::class;
+    protected $modelClass = Search::class;
 
     /**
      * @throws RequestException

@@ -4,15 +4,15 @@ namespace Easir\SDK\Request;
 
 use Easir\SDK\Exception\RequestException;
 use Easir\SDK\Request;
-use Easir\SDK\Request\Model\Search;
-use Easir\SDK\Response\ListCompanyAccounts as ListCompanyAccountsResponse;
+use Easir\SDK\Request\Model\GetLeadTypes as GetLeadTypesModel;
+use Easir\SDK\Response\GetLeadTypes as GetLeadTypesResponse;
 
-class ListCompanyAccounts extends Request
+class GetLeadTypes extends Request
 {
     /**
      * @var string
      */
-    protected $url = '/accounts?page=%d&per_page=%d&q=%s';
+    protected $url = '/lead-types?page=%d&per_page=%d&q=%s';
     /**
      * @var string
      */
@@ -24,11 +24,11 @@ class ListCompanyAccounts extends Request
     /**
      * @var string
      */
-    public $responseClass = ListCompanyAccountsResponse::class;
+    public $responseClass = GetLeadTypesResponse::class;
     /**
      * @var string
      */
-    protected $modelClass = Search::class;
+    protected $modelClass = GetLeadTypesModel::class;
 
     /**
      * @throws RequestException

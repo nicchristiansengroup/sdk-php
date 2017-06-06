@@ -2,18 +2,18 @@
 
 namespace Easir\SDK\Response;
 
-use Easir\SDK\Model\Pagination;
-use Easir\SDK\Model\Team;
+use Easir\SDK\Model\Template;
 use Easir\SDK\Response;
+use Easir\SDK\Model\Pagination;
 
-class ListCompanyTeams extends Response
+class GetTemplates extends Response
 {
     /**
      * @var array
      */
-    protected $collections = ['data' => 'team'];
+    protected $collections = ['data' => 'template'];
     /**
-     * @var Team[]
+     * @var Template[]
      */
     public $data;
     /**

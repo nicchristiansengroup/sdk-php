@@ -5,11 +5,6 @@ namespace Easir\SDK\Request;
 use Easir\SDK\Request;
 use Easir\SDK\Model\LocalizationTypes;
 
-/**
- * Base request class for getting the localisation types
- *
- * @package Easir\SDK\Request
- */
 abstract class GetLocalizationTypes extends Request
 {
     /**

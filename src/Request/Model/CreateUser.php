@@ -4,13 +4,12 @@ namespace Easir\SDK\Request\Model;
 
 use Easir\SDK\Request\Model;
 
-/**
- * The request model for CreateUser
- *
- * @package Easir\SDK\Request\Model
- */
 class CreateUser extends Model
 {
+    /**
+     * @var string
+     */
+    public $email;
     /**
      * @var string
      */
@@ -22,7 +21,7 @@ class CreateUser extends Model
     /**
      * @var string
      */
-    public $email;
+    public $password;
     /**
      * @var string
      */
@@ -30,21 +29,25 @@ class CreateUser extends Model
     /**
      * @var string
      */
-    public $timezone = "Europe/Copenhagen";
-    /**
-     * @var string
-     */
     public $phone_number;
     /**
      * @var string
      */
-    public $password;
+    public $timezone = "Europe/Copenhagen";
     /**
-     * @var integer
+     * @var array
      */
-    public $team_id;
+    public $team_ids;
+    /**
+     * @var array
+     */
+    public $role_ids;
     /**
      * @var string
      */
     public $locale = 'da-DK';
+    /**
+     * @var bool
+     */
+    public $system_user = false;
 }

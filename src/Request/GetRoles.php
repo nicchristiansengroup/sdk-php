@@ -5,14 +5,14 @@ namespace Easir\SDK\Request;
 use Easir\SDK\Exception\RequestException;
 use Easir\SDK\Request;
 use Easir\SDK\Request\Model\Search;
-use Easir\SDK\Response\ListCompanyAccounts as ListCompanyAccountsResponse;
+use Easir\SDK\Response\GetRoles as GetRolesResponse;
 
-class ListCompanyAccounts extends Request
+class GetRoles extends Request
 {
     /**
      * @var string
      */
-    protected $url = '/accounts?page=%d&per_page=%d&q=%s';
+    protected $url = '/roles?page=%d&per_page=%d';
     /**
      * @var string
      */
@@ -20,11 +20,11 @@ class ListCompanyAccounts extends Request
     /**
      * @var bool
      */
-    public $requiresAuth = true;
+    public $requiresAuth = false;
     /**
      * @var string
      */
-    public $responseClass = ListCompanyAccountsResponse::class;
+    public $responseClass = GetRolesResponse::class;
     /**
      * @var string
      */
@@ -40,8 +40,7 @@ class ListCompanyAccounts extends Request
 
         return sprintf(parent::getUrl(),
             (int)$this->model->page,
-            (int)$this->model->perPage,
-            urlencode((string)$this->model->searchTerm)
+            (int)$this->model->perPage
         );
     }
 }

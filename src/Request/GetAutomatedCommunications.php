@@ -5,14 +5,14 @@ namespace Easir\SDK\Request;
 use Easir\SDK\Exception\RequestException;
 use Easir\SDK\Request;
 use Easir\SDK\Request\Model\Search;
-use Easir\SDK\Response\ListCompanyAccounts as ListCompanyAccountsResponse;
+use Easir\SDK\Response\GetAutomatedCommunications as GetAutomatedCommunicationsResponse;
 
-class ListCompanyAccounts extends Request
+class GetAutomatedCommunications extends Request
 {
     /**
      * @var string
      */
-    protected $url = '/accounts?page=%d&per_page=%d&q=%s';
+    protected $url = '/automated-communications?page=%d&per_page=%d&q=%s';
     /**
      * @var string
      */
@@ -24,7 +24,7 @@ class ListCompanyAccounts extends Request
     /**
      * @var string
      */
-    public $responseClass = ListCompanyAccountsResponse::class;
+    public $responseClass = GetAutomatedCommunicationsResponse::class;
     /**
      * @var string
      */

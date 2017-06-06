@@ -2,29 +2,10 @@
 
 namespace Easir\SDK\Request\Model;
 
-use Easir\SDK\Request\Model;
-
-/**
- * The request model for ListCompanyUsers
- *
- * @package Easir\SDK\Request\Model
- */
-class ListCompanyUsers extends Model
+class ListCompanyUsers extends Search
 {
     /**
      * @var integer
      */
-    public $id;
-    /**
-     * @var string
-     */
-    public $searchTerm = '';
-    /**
-     * @var integer
-     */
-    public $page = 1;
-    /**
-     * @var integer
-     */
-    public $perPage = 15;
+    public $company_id;
 }

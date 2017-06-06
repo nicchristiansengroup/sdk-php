@@ -5,14 +5,14 @@ namespace Easir\SDK\Request;
 use Easir\SDK\Exception\RequestException;
 use Easir\SDK\Request;
 use Easir\SDK\Request\Model\Search;
-use Easir\SDK\Response\ListCompanyAccounts as ListCompanyAccountsResponse;
+use Easir\SDK\Response\GetTemplates as GetTemplatesResponse;
 
-class ListCompanyAccounts extends Request
+class GetTemplates extends Request
 {
     /**
      * @var string
      */
-    protected $url = '/accounts?page=%d&per_page=%d&q=%s';
+    protected $url = '/templates?page=%d&per_page=%d&q=%s';
     /**
      * @var string
      */
@@ -24,7 +24,7 @@ class ListCompanyAccounts extends Request
     /**
      * @var string
      */
-    public $responseClass = ListCompanyAccountsResponse::class;
+    public $responseClass = GetTemplatesResponse::class;
     /**
      * @var string
      */

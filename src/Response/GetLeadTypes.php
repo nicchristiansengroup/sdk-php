@@ -2,18 +2,18 @@
 
 namespace Easir\SDK\Response;
 
+use Easir\SDK\Model\LeadType;
 use Easir\SDK\Model\Pagination;
-use Easir\SDK\Model\Team;
 use Easir\SDK\Response;
 
-class ListCompanyTeams extends Response
+class GetLeadTypes extends Response
 {
     /**
      * @var array
      */
-    protected $collections = ['data' => 'team'];
+    protected $collections = ['data' => 'lead_type'];
     /**
-     * @var Team[]
+     * @var LeadType[]
      */
     public $data;
     /**

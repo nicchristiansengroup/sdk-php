@@ -7,11 +7,6 @@ use Easir\SDK\Request;
 use Easir\SDK\Request\Model\ListCompanyUsers as ListCompanyUsersModel;
 use Easir\SDK\Response\ListCompanyUsers as ListCompanyUsersResponse;
 
-/**
- * Request class for listing company users
- *
- * @package Easir\SDK\Request
- */
 class ListCompanyUsers extends Request
 {
     /**
@@ -44,7 +39,7 @@ class ListCompanyUsers extends Request
         $this->checkModel();
 
         return sprintf(parent::getUrl(),
-            (int)$this->model->id,
+            (int)$this->model->company_id,
             (int)$this->model->page,
             (int)$this->model->perPage,
             urlencode((string)$this->model->searchTerm)

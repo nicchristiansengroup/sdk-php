@@ -6,5 +6,8 @@ use Easir\SDK\Model;
 
 class UserType extends Model
 {
+    /**
+     * @var string
+     */
     public $name;
 }

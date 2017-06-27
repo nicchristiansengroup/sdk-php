@@ -6,5 +6,32 @@ use Easir\SDK\Model;
 
 class ContentSuggestion extends Model
 {
-    public $id, $type, $name, $subject, $content, $template_ids, $team_id;
+    /**
+     * @var string
+     */
+    public $id;
+    /**
+     * @var string
+     */
+    public $type;
+    /**
+     * @var string
+     */
+    public $name;
+    /**
+     * @var string
+     */
+    public $subject;
+    /**
+     * @var string
+     */
+    public $content;
+    /**
+     * @var int[]|null
+     */
+    public $template_ids;
+    /**
+     * @var int|null
+     */
+    public $team_id;
 }

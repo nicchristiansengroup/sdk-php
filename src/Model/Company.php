@@ -4,13 +4,70 @@ namespace Easir\SDK\Model;
 
 use Easir\SDK\Response;
 
-/**
- * This is both a model and a Response
- *
- * @package Easir\SDK\Model
- */
 class Company extends Response
 {
-    public $id, $name, $phone_number, $website, $vat, $logo_1, $logo_2, $created_at, $updated_at,
-            $billing, $timezone, $locale, $language, $currency, $user_count;
+    /**
+     * @var int
+     */
+    public $id;
+    /**
+     * @var string
+     */
+    public $name;
+    /**
+     * @var Billing
+     */
+    public $billing;
+    /**
+     * @var string
+     */
+    public $phone_number;
+    /**
+     * @var string
+     */
+    public $website;
+    /**
+     * @var string
+     */
+    public $vat;
+    /**
+     * @var string
+     */
+    public $logo_1;
+    /**
+     * @var string
+     */
+    public $logo_2;
+    /**
+     * @var Timezone
+     */
+    public $timezone;
+    /**
+     * @var Locale
+     */
+    public $locale;
+    /**
+     * @var Language
+     */
+    public $language;
+    /**
+     * @var Currency
+     */
+    public $currency;
+    /**
+     * @var User
+     */
+    public $user;
+    /**
+     * @var Plan
+     */
+    public $plan;
+    /**
+     * @var string
+     */
+    public $created_at;
+    /**
+     * @var string
+     */
+    public $updated_at;
 }

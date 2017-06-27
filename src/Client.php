@@ -52,6 +52,10 @@ class Client extends GuzzleClient
         $url = rtrim($this->endpoint, '/') . $request->getUrl();
         $options = array_merge($options, $request->options);
 
+        if (isset($options['multipart'])) {
+            unset($options['json']);
+        }
+
         try {
             $clientResponse = $this->request($request->method, $url, $options);
         } catch (RequestException $e) {

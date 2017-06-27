@@ -5,14 +5,14 @@ namespace Easir\SDK\Request;
 use Easir\SDK\Exception\RequestException;
 use Easir\SDK\Request;
 use Easir\SDK\Request\Model\GetById;
-use Easir\SDK\Model\Team;
+use Easir\SDK\Model\Template;
 
-class GetTeam extends Request
+class GetTemplate extends Request
 {
     /**
      * @var string
      */
-    protected $url = '/teams/%d';
+    protected $url = '/templates/%d';
     /**
      * @var string
      */
@@ -24,7 +24,7 @@ class GetTeam extends Request
     /**
      * @var string
      */
-    public $responseClass = Team::class;
+    public $responseClass = Template::class;
     /**
      * @var string
      */

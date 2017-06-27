@@ -5,14 +5,14 @@ namespace Easir\SDK\Request;
 use Easir\SDK\Exception\RequestException;
 use Easir\SDK\Request;
 use Easir\SDK\Request\Model\GetById;
-use Easir\SDK\Model\Team;
+use Easir\SDK\Model\AutomatedCommunication;
 
-class GetTeam extends Request
+class GetAutomatedCommunication extends Request
 {
     /**
      * @var string
      */
-    protected $url = '/teams/%d';
+    protected $url = '/automated-communications/%s';
     /**
      * @var string
      */
@@ -24,7 +24,7 @@ class GetTeam extends Request
     /**
      * @var string
      */
-    public $responseClass = Team::class;
+    public $responseClass = AutomatedCommunication::class;
     /**
      * @var string
      */
@@ -38,6 +38,6 @@ class GetTeam extends Request
     {
         $this->checkModel();
 
-        return sprintf(parent::getUrl(), (int)$this->model->id);
+        return sprintf(parent::getUrl(), (string)$this->model->id);
     }
 }

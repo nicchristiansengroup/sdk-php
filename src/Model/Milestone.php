@@ -35,7 +35,7 @@ class Milestone extends Model
      */
     public $chance_of_success;
     /**
-     * @var int
+     * @var int|null
      */
     public $suggest_task_after;
     /**

@@ -1,3 +1,12 @@
+0.13.0
+Added support for Attachments
+Added support for POST /automated-communications
+Added support for POST /templates
+Added support for GET /filenamager/files/{file_id}
+Added support for GET /automated-communications/{id}
+Added support for GET /relations-paths/{id}
+Added support for GET /templates/{id}
+
 0.12.0
 Added support for POST /fields/custom
 Added support for POST /relations-paths

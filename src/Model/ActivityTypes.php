@@ -11,5 +11,12 @@ class ActivityTypes extends Model
         'supportive' => 'milestone'
     ];
 
-    public $milestones, $supportive;
+    /**
+     * @var Milestone[]
+     */
+    public $milestones;
+    /**
+     * @var Milestone[]
+     */
+    public $supportive;
 }

@@ -6,5 +6,12 @@ use Easir\SDK\Model;
 
 class Timezone extends Model
 {
-    public $name, $offset;
+    /**
+     * @var string
+     */
+    public $name;
+    /**
+     * @var int
+     */
+    public $offset;
 }

@@ -2,16 +2,16 @@
 
 namespace Easir\SDK\Request;
 
-use Easir\SDK\Model\Company;
 use Easir\SDK\Request;
-use Easir\SDK\Request\Model\CreateCompany as CreateCompanyRequestModel;
+use Easir\SDK\Request\Model\CreateTemplate as CreateTemplateModel;
+use Easir\SDK\Model\Template;
 
-class CreateCompany extends Request
+class CreateTemplate extends Request
 {
     /**
      * @var string
      */
-    protected $url = '/companies';
+    protected $url = '/templates';
     /**
      * @var string
      */
@@ -23,9 +23,9 @@ class CreateCompany extends Request
     /**
      * @var string
      */
-    public $responseClass = Company::class;
+    public $responseClass = Template::class;
     /**
      * @var string
      */
-    protected $modelClass = CreateCompanyRequestModel::class;
+    protected $modelClass = CreateTemplateModel::class;
 }

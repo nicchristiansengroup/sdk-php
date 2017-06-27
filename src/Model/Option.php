@@ -6,7 +6,14 @@ use Easir\SDK\Model;
 
 abstract class Option extends Model
 {
-    public $id, $value;
+    /**
+     * @var int
+     */
+    public $id;
+    /**
+     * @var string
+     */
+    public $value;
 
     /**
      * @static

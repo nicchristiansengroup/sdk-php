@@ -6,5 +6,12 @@ use Easir\SDK\Model;
 
 class Language extends Model
 {
-    public $code, $name;
+    /**
+     * @var string
+     */
+    public $code;
+    /**
+     * @var string
+     */
+    public $name;
 }

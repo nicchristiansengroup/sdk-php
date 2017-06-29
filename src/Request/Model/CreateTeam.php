@@ -13,7 +13,7 @@ class CreateTeam extends Model
     /**
      * @var string
      */
-    public $timezone = "Europe/Copenhagen";
+    public $timezone = 'Europe/Copenhagen';
     /**
      * @var string
      */

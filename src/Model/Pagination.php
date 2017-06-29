@@ -6,5 +6,20 @@ use Easir\SDK\Model;
 
 class Pagination extends Model
 {
-    public $total, $page, $per_page, $urls;
+    /**
+     * @var int
+     */
+    public $total;
+    /**
+     * @var int
+     */
+    public $page;
+    /**
+     * @var int
+     */
+    public $per_page;
+    /**
+     * @var Urls
+     */
+    public $urls;
 }

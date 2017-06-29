@@ -4,22 +4,22 @@ namespace Easir\SDK\Model;
 
 use Easir\SDK\Model;
 
-class Group extends Model
+class Rejection extends Model
 {
     /**
      * @var int
      */
-    public $id;
+    public $team_id;
+    /**
+     * @var int
+     */
+    public $user_id;
     /**
      * @var string
      */
-    public $name;
+    public $rejection_reason;
     /**
      * @var string
      */
-    public $created_at;
-    /**
-     * @var string
-     */
-    public $updated_at;
+    public $rejection_date;
 }

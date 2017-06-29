@@ -4,14 +4,18 @@ namespace Easir\SDK\Model;
 
 use Easir\SDK\Model;
 
-class WebhookEvent extends Model
+class Call extends Model
 {
     /**
      * @var int
      */
-    public $id;
+    public $team_id;
+    /**
+     * @var int
+     */
+    public $user_id;
     /**
      * @var string
      */
-    public $event_name;
+    public $call_date;
 }

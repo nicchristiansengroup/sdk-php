@@ -9,7 +9,6 @@ abstract class Field extends Model
     public $name, $value;
 
     /**
-     * @static
      * @param string $name
      * @param string $value
      * @return static

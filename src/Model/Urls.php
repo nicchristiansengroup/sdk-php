@@ -6,5 +6,12 @@ use Easir\SDK\Model;
 
 class Urls extends Model
 {
-    public $previous, $next;
+    /**
+     * @var string
+     */
+    public $previous;
+    /**
+     * @var string
+     */
+    public $next;
 }

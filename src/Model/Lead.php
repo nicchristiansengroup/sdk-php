@@ -6,10 +6,140 @@ use Easir\SDK\Response;
 
 class Lead extends Response
 {
-    protected $collections = ['lead_data' => 'lead_data'];
-
-    public $id, $company_id, $user_id, $team_id, $agency_team_id, $team, $lead_type_id, $lead_type, $b2c,
-        $interest, $lead_source, $lead_user, $lead_data, $status, $rejections, $acceptions, $assignments,
-        $escalations, $calls, $revocations, $case_id, $original_account, $account_id, $account, $original_contact,
-        $contact_id, $contact, $expires_at, $external_weight, $created_at, $updated_at;
+    /**
+     * @var array
+     */
+    protected $collections = [
+        'lead_data' => 'lead_data',
+        'rejections' => 'rejection',
+        'acceptions' => 'acception',
+        'assignments' => 'assignment',
+        'escalations' => 'escalation',
+        'calls' => 'call',
+        'revocations' => 'revocation',
+    ];
+    /**
+     * @var string
+     */
+    public $id;
+    /**
+     * @var int
+     */
+    public $company_id;
+    /**
+     * @var int
+     */
+    public $user_id;
+    /**
+     * @var int
+     */
+    public $team_id;
+    /**
+     * @var int
+     */
+    public $agency_team_id;
+    /**
+     * @var Team
+     */
+    public $team;
+    /**
+     * @var string
+     */
+    public $lead_type_id;
+    /**
+     * @var LeadType
+     */
+    public $lead_type;
+    /**
+     * @var bool
+     */
+    public $b2c;
+    /**
+     * @var string
+     */
+    public $interest;
+    /**
+     * @var string
+     */
+    public $lead_source;
+    /**
+     * @var string
+     */
+    public $lead_user;
+    /**
+     * @var LeadData[]
+     */
+    public $lead_data;
+    /**
+     * @var string
+     */
+    public $status;
+    /**
+     * @var Rejection[]
+     */
+    public $rejections;
+    /**
+     * @var Acception[]
+     */
+    public $acceptions;
+    /**
+     * @var Assignment[]
+     */
+    public $assignments;
+    /**
+     * @var Escalation[]
+     */
+    public $escalations;
+    /**
+     * @var Call[]
+     */
+    public $calls;
+    /**
+     * @var Revocation[]
+     */
+    public $revocations;
+    /**
+     * @var string
+     */
+    public $case_id;
+    /**
+     * @var string
+     */
+    public $original_account;
+    /**
+     * @var string
+     */
+    public $account_id;
+    /**
+     * @var Account
+     */
+    public $account;
+    /**
+     * @var string
+     */
+    public $original_contact;
+    /**
+     * @var string
+     */
+    public $contact_id;
+    /**
+     * @var Contact
+     */
+    public $contact;
+    /**
+     * @var string
+     */
+    public $expires_at;
+    /**
+     * @var int
+     */
+    public $external_weight;
+    /**
+     * @var string
+     */
+    public $created_at;
+    /**
+     * @var string
+     */
+    public $updated_at;
 }

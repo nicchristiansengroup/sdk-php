@@ -6,10 +6,6 @@ use Easir\SDK\Model\Contact;
 use Easir\SDK\Model\Pagination;
 use Easir\SDK\Response;
 
-/**
- * Class ListCompanyContacts
- * @package Easir\SDK\Response
- */
 class ListCompanyContacts extends Response
 {
     /**

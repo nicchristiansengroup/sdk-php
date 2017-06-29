@@ -2,6 +2,8 @@
 
 namespace Easir\SDK\Request\Model;
 
+use Easir\SDK\Model\CustomField;
+use Easir\SDK\Model\FixedField;
 use Easir\SDK\Request\Model;
 
 class CreateAccount extends Model
@@ -15,11 +17,11 @@ class CreateAccount extends Model
      */
     public $team_id;
     /**
-     * @var array
+     * @var FixedField[]
      */
     public $fixed_fields;
     /**
-     * @var array
+     * @var CustomField[]
      */
     public $custom_fields;
 }

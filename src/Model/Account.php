@@ -6,7 +6,40 @@ use Easir\SDK\Response;
 
 class Account extends Response
 {
+    /**
+     * @var array
+     */
     protected $collections = ['fixed_fields' => 'fixed_field', 'custom_fields' => 'custom_field'];
-
-    public $id, $b2c, $user_id, $team_id, $fixed_fields, $custom_fields, $created_at, $updated_at;
+    /**
+     * @var string
+     */
+    public $id;
+    /**
+     * @var bool
+     */
+    public $b2c;
+    /**
+     * @var integer
+     */
+    public $user_id;
+    /**
+     * @var integer
+     */
+    public $team_id;
+    /**
+     * @var FixedField[]
+     */
+    public $fixed_fields;
+    /**
+     * @var CustomField[]
+     */
+    public $custom_fields;
+    /**
+     * @var string
+     */
+    public $created_at;
+    /**
+     * @var string
+     */
+    public $updated_at;
 }

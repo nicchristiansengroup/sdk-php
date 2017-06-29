@@ -2,11 +2,6 @@
 
 namespace Easir\SDK\Request;
 
-/**
- * Request base model
- *
- * @package Easir\SDK\Request
- */
 class Model
 {
     /**

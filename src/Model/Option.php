@@ -16,7 +16,6 @@ abstract class Option extends Model
     public $value;
 
     /**
-     * @static
      * @param string $id
      * @param string $value
      * @return static

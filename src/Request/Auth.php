@@ -7,10 +7,6 @@ use Easir\SDK\Request;
 use Easir\SDK\Request\Model\Auth as AuthRequestModel;
 use Easir\SDK\Response\Auth as AuthResponse;
 
-/**
- * Class AuthRequest
- * @package Easir\SDK\Request
- */
 class Auth extends Request
 {
     /**

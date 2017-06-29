@@ -8,7 +8,7 @@ class ActivityTypes extends Model
 {
     protected $collections = [
         'milestones' => 'milestone',
-        'supportive' => 'milestone'
+        'supportive' => 'supportive'
     ];
 
     /**
@@ -16,7 +16,7 @@ class ActivityTypes extends Model
      */
     public $milestones;
     /**
-     * @var Milestone[]
+     * @var Supportive[]
      */
     public $supportive;
 }

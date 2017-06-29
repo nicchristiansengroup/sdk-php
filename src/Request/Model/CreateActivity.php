@@ -4,12 +4,26 @@ namespace Easir\SDK\Request\Model;
 
 use Easir\SDK\Request\Model;
 
-/**
- * The request model for CreateActivity
- *
- * @package Easir\SDK\Request\Model
- */
 class CreateActivity extends Model
 {
-    public $case_id, $activity_types, $communication_channel, $note = null, $task = null;
+    /**
+     * @var string
+     */
+    public $case_id;
+    /**
+     * @var string[]
+     */
+    public $activity_types;
+    /**
+     * @var string
+     */
+    public $communication_channel;
+    /**
+     * @var null|string
+     */
+    public $note = null;
+    /**
+     * @var null|string
+     */
+    public $task = null;
 }

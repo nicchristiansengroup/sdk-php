@@ -2,14 +2,14 @@
 
 namespace Easir\SDK\Model;
 
-use Easir\SDK\Response;
+use Easir\SDK\Model;
 
-class Webhook extends Response
+class Acception extends Model
 {
     /**
      * @var int
      */
-    public $id;
+    public $team_id;
     /**
      * @var int
      */
@@ -17,21 +17,21 @@ class Webhook extends Response
     /**
      * @var string
      */
-    public $target_url;
-    /**
-     * @var WebhookEvent
-     */
-    public $webhook_event;
+    public $case_id;
     /**
      * @var string
      */
-    public $verification_token;
+    public $account_id;
     /**
      * @var string
      */
-    public $created_at;
+    public $contact_id;
     /**
      * @var string
      */
-    public $updated_at;
+    public $accepted_date;
+    /**
+     * @var string
+     */
+    public $first_activity_at;
 }

@@ -18,10 +18,6 @@ class GetContacts extends Request
      */
     public $method = 'GET';
     /**
-     * @var bool
-     */
-    public $requiresAuth = true;
-    /**
      * @var string
      */
     public $responseClass = GetContactsResponse::class;

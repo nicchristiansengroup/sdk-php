@@ -6,5 +6,25 @@ use Easir\SDK\Model;
 
 class Role extends Model
 {
-    public $id, $name, $access_teams, $rights, $created_at, $updated_at;
+    /**
+     * @var int
+     */
+    public $id;
+    /**
+     * @var string
+     */
+    public $name;
+    public $access_teams;
+    /**
+     * @var string[]
+     */
+    public $rights;
+    /**
+     * @var string
+     */
+    public $created_at;
+    /**
+     * @var string
+     */
+    public $updated_at;
 }

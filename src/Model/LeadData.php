@@ -6,8 +6,20 @@ use Easir\SDK\Model;
 
 class LeadData extends Model
 {
-    public $key, $value;
+    /**
+     * @var string
+     */
+    public $key;
+    /**
+     * @var string
+     */
+    public $value;
 
+    /**
+     * @param $key
+     * @param $value
+     * @return static
+     */
     public static function create($key, $value) {
         return new static(["key" => $key, "value" => $value]);
     }

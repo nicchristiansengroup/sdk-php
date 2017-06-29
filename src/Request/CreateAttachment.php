@@ -19,10 +19,6 @@ class CreateAttachment extends Request
      */
     public $method = 'POST';
     /**
-     * @var bool
-     */
-    public $requiresAuth = true;
-    /**
      * @var string
      */
     public $responseClass = Attachment::class;
@@ -30,9 +26,16 @@ class CreateAttachment extends Request
      * @var string
      */
     protected $modelClass = CreateAttachmentModel::class;
-
+    /**
+     * @var mixed
+     */
     public $options = ['header' => ['Content-Type' => 'multipart/form-data']];
 
+    /**
+     * CreateAttachment constructor.
+     * @param Model|null $model
+     * @throws RequestException
+     */
     public function __construct(RequestModel $model = null)
     {
         parent::__construct($model);

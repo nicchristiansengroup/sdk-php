@@ -6,10 +6,6 @@ use Easir\SDK\Model\Cases;
 use Easir\SDK\Model\Pagination;
 use Easir\SDK\Response;
 
-/**
- * Class ListCompanyCases
- * @package Easir\SDK\Response
- */
 class ListCompanyCases extends Response
 {
     /**

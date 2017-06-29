@@ -17,10 +17,6 @@ class CreateCompany extends Request
      */
     public $method = 'POST';
     /**
-     * @var bool
-     */
-    public $requiresAuth = true;
-    /**
      * @var string
      */
     public $responseClass = Company::class;

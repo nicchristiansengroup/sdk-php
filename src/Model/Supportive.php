@@ -2,7 +2,7 @@
 
 namespace Easir\SDK\Model;
 
-class CustomField extends Field
+class Supportive extends Milestone
 {
 
 }

@@ -19,7 +19,7 @@ class LeadType extends Model
      */
     public $name;
     /**
-     * @var string //is used?
+     * @var string
      */
     public $icon;
     /**
@@ -43,11 +43,11 @@ class LeadType extends Model
      */
     public $disabled;
     /**
-     * @var bool //is used?
+     * @var bool
      */
     public $highlighted;
     /**
-     * how does it look?
+     * @var TeamSettings
      */
     public $team_settings;
     /**

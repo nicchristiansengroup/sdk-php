@@ -27,13 +27,12 @@ class CreateAttachment extends Request
      */
     protected $modelClass = CreateAttachmentModel::class;
     /**
-     * @var mixed
+     * @var string[]
      */
     public $options = ['header' => ['Content-Type' => 'multipart/form-data']];
 
     /**
-     * CreateAttachment constructor.
-     * @param Model|null $model
+     * @param RequestModel $model
      * @throws RequestException
      */
     public function __construct(RequestModel $model = null)

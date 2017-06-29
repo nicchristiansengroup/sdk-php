@@ -11,9 +11,9 @@ abstract class Field extends Model
     /**
      * @param string $name
      * @param string $value
-     * @return static
+     * @return self
      */
     public static function create($name, $value) {
-        return new static(["name" => $name, "value" => $value]);
+        return new static(['name' => $name, 'value' => $value]);
     }
 }

@@ -16,11 +16,11 @@ class LeadData extends Model
     public $value;
 
     /**
-     * @param $key
-     * @param $value
-     * @return static
+     * @param string
+     * @param string
+     * @return self
      */
     public static function create($key, $value) {
-        return new static(["key" => $key, "value" => $value]);
+        return new static(['key' => $key, 'value' => $value]);
     }
 }

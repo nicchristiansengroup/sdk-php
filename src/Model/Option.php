@@ -18,7 +18,7 @@ abstract class Option extends Model
     /**
      * @param string $id
      * @param string $value
-     * @return static
+     * @return self
      */
     public static function create($id, $value) {
         return new static(['id' => $id, 'value' => $value]);

@@ -106,4 +106,4 @@ class User extends Response
      * @var array
      */
     public $level;
-
+}

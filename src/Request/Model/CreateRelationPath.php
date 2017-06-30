@@ -2,6 +2,7 @@
 
 namespace Easir\SDK\Request\Model;
 
+use Easir\SDK\Model\ActivityTypes;
 use Easir\SDK\Request\Model;
 
 class CreateRelationPath extends Model
@@ -15,7 +16,7 @@ class CreateRelationPath extends Model
      */
     public $is_sales_type;
     /**
-     * @var array
+     * @var ActivityTypes
      */
     public $activity_types;
 }

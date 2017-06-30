@@ -6,5 +6,20 @@ use Easir\SDK\Model;
 
 class EscalationActive extends Model
 {
-    public $day_of_week, $closed, $open, $close;
+    /**
+     * @var int
+     */
+    public $day_of_week;
+    /**
+     * @var bool
+     */
+    public $closed;
+    /**
+     * @var string
+     */
+    public $open;
+    /**
+     * @var string
+     */
+    public $close;
 }

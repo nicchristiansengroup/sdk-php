@@ -17,10 +17,6 @@ class DeleteWebhook extends Request
      */
     public $method = 'DELETE';
     /**
-     * @var bool
-     */
-    public $requiresAuth = true;
-    /**
      * @var string
      */
     protected $modelClass = GetById::class;

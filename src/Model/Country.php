@@ -6,5 +6,16 @@ use Easir\SDK\Model;
 
 class Country extends Model
 {
-    public $name, $native_name, $code;
+    /**
+     * @var string
+     */
+    public $name;
+    /**
+     * @var string
+     */
+    public $native_name;
+    /**
+     * @var string
+     */
+    public $code;
 }

@@ -6,5 +6,12 @@ use Easir\SDK\Model;
 
 class Plan extends Model
 {
-    public $id, $name;
+    /**
+     * @var int
+     */
+    public $id;
+    /**
+     * @var string
+     */
+    public $name;
 }

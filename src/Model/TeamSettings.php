@@ -6,7 +6,29 @@ use Easir\SDK\Model;
 
 class TeamSettings extends Model
 {
+    /**
+     * @var array
+     */
     protected $collections = ['escalation_active' => 'escalation_active'];
 
-    public $users, $disabled, $escalation_active, $escalation_accept, $escalation_activity;
+    /**
+     * @var array
+     */
+    public $users;
+    /**
+     * @var bool
+     */
+    public $disabled;
+    /**
+     * @var EscalationActive[]
+     */
+    public $escalation_active;
+    /**
+     * @var int
+     */
+    public $escalation_accept;
+    /**
+     * @var int
+     */
+    public $escalation_activity;
 }

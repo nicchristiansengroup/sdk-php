@@ -18,10 +18,6 @@ class UpdateLead extends Request
      */
     public $method = 'PUT';
     /**
-     * @var bool
-     */
-    public $requiresAuth = true;
-    /**
      * @var string
      */
     public $responseClass = Lead::class;

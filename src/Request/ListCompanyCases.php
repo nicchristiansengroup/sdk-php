@@ -7,11 +7,6 @@ use Easir\SDK\Request;
 use Easir\SDK\Request\Model\ListCompanyCases as ListCompanyCasesModel;
 use Easir\SDK\Response\ListCompanyCases as ListCompanyCasesResponse;
 
-/**
- * Request class for listing company accounts
- *
- * @package Easir\SDK\Request
- */
 class ListCompanyCases extends Request
 {
     /**
@@ -22,10 +17,6 @@ class ListCompanyCases extends Request
      * @var string
      */
     public $method = 'GET';
-    /**
-     * @var bool
-     */
-    public $requiresAuth = true;
     /**
      * @var string
      */

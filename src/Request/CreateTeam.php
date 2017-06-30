@@ -17,10 +17,6 @@ class CreateTeam extends Request
      */
     public $method = 'POST';
     /**
-     * @var bool
-     */
-    public $requiresAuth = true;
-    /**
      * @var string
      */
     public $responseClass = Team::class;

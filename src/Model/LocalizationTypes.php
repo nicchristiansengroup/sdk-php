@@ -7,8 +7,6 @@ use Easir\SDK\Response;
 class LocalizationTypes extends Response
 {
     /**
-     * List of possible collection names and their types
-     *
      * @var array
      */
     protected $collections = [
@@ -18,6 +16,24 @@ class LocalizationTypes extends Response
             'languages' => 'language',
             'countries' => 'country',
     ];
-
-    public $locales, $timezones, $currencies, $languages, $countries, $plan;
+    /**
+     * @var Locale[]
+     */
+    public $locales;
+    /**
+     * @var Timezone[]
+     */
+    public $timezones;
+    /**
+     * @var Currency[]
+     */
+    public $currencies;
+    /**
+     * @var Language[]
+     */
+    public $languages;
+    /**
+     * @var Country[]
+     */
+    public $countries;
 }

@@ -6,5 +6,12 @@ use Easir\SDK\Model;
 
 class WebhookEvent extends Model
 {
-    public $id, $event_name;
+    /**
+     * @var int
+     */
+    public $id;
+    /**
+     * @var string
+     */
+    public $event_name;
 }

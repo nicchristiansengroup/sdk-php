@@ -7,11 +7,6 @@ use Easir\SDK\Request;
 use Easir\SDK\Request\Model\ListCompanyTeams as ListCompanyTeamsModel;
 use Easir\SDK\Response\ListCompanyTeams as ListCompanyTeamsResponse;
 
-/**
- * Request class for listing company teams
- *
- * @package Easir\SDK\Request
- */
 class ListCompanyTeams extends Request
 {
     /**
@@ -22,10 +17,6 @@ class ListCompanyTeams extends Request
      * @var string
      */
     public $method = 'GET';
-    /**
-     * @var bool
-     */
-    public $requiresAuth = true;
     /**
      * @var string
      */

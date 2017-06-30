@@ -6,13 +6,19 @@ use Easir\SDK\Model;
 
 abstract class Option extends Model
 {
-    public $id, $value;
+    /**
+     * @var int
+     */
+    public $id;
+    /**
+     * @var string
+     */
+    public $value;
 
     /**
-     * @static
      * @param string $id
      * @param string $value
-     * @return static
+     * @return self
      */
     public static function create($id, $value) {
         return new static(['id' => $id, 'value' => $value]);

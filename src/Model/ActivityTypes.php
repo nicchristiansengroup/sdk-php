@@ -8,8 +8,15 @@ class ActivityTypes extends Model
 {
     protected $collections = [
         'milestones' => 'milestone',
-        'supportive' => 'milestone'
+        'supportive' => 'supportive'
     ];
 
-    public $milestones, $supportive;
+    /**
+     * @var Milestone[]
+     */
+    public $milestones;
+    /**
+     * @var Supportive[]
+     */
+    public $supportive;
 }

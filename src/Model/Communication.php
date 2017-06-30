@@ -6,7 +6,28 @@ use Easir\SDK\Response;
 
 class Communication extends Response
 {
-    protected $collections = ['delay' => 'delay'];
-
-    public $name, $delay, $template_id, $subject, $content;
+    /**
+     * @var string
+     */
+    public $name;
+    /**
+     * @var Delay
+     */
+    public $delay;
+    /**
+     * @var int
+     */
+    public $template_id;
+    /**
+     * @var string
+     */
+    public $subject;
+    /**
+     * @var string
+     */
+    public $content;
+    /**
+     * @var string[]
+     */
+    public $attachments;
 }

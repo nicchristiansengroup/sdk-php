@@ -6,5 +6,16 @@ use Easir\SDK\Model;
 
 class Locale extends Model
 {
-    public $code, $language_name, $country;
+    /**
+     * @var string
+     */
+    public $code;
+    /**
+     * @var string
+     */
+    public $language_name;
+    /**
+     * @var Country
+     */
+    public $country;
 }

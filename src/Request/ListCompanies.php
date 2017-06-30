@@ -6,11 +6,6 @@ use Easir\SDK\Request;
 use Easir\SDK\Request\Model\ListCompanies as ListCompaniesModel;
 use Easir\SDK\Response\ListCompanies as ListCompaniesResponse;
 
-/**
- * Request class for listing companies
- *
- * @package Easir\SDK\Request
- */
 class ListCompanies extends Request
 {
     /**
@@ -21,10 +16,6 @@ class ListCompanies extends Request
      * @var string
      */
     public $method = 'GET';
-    /**
-     * @var bool
-     */
-    public $requiresAuth = true;
     /**
      * @var string
      */

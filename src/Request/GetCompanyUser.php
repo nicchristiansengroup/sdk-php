@@ -7,11 +7,6 @@ use Easir\SDK\Model\User;
 use Easir\SDK\Request;
 use Easir\SDK\Request\Model\GetCompanyUser as GetCompanyUserModel;
 
-/**
- * Request class for getting a specific company user
- *
- * @package Easir\SDK\Request
- */
 class GetCompanyUser extends Request
 {
     /**
@@ -22,10 +17,6 @@ class GetCompanyUser extends Request
      * @var string
      */
     public $method = 'GET';
-    /**
-     * @var bool
-     */
-    public $requiresAuth = true;
     /**
      * @var string
      */

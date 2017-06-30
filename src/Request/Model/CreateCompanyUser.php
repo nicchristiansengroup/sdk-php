@@ -6,5 +6,20 @@ use Easir\SDK\Request\Model;
 
 class CreateCompanyUser extends Model
 {
-    public $first_name, $last_name, $email, $password;
+    /**
+     * @var string
+     */
+    public $first_name;
+    /**
+     * @var string
+     */
+    public $last_name;
+    /**
+     * @var string
+     */
+    public $email;
+    /**
+     * @var string
+     */
+    public $password;
 }

@@ -6,5 +6,28 @@ use Easir\SDK\Model;
 
 class Group extends Model
 {
-    public $id, $name, $created_at, $updated_at;
+    /**
+     * @var array
+     */
+    protected $collections = ['teams' => 'team'];
+    /**
+     * @var int
+     */
+    public $id;
+    /**
+     * @var string
+     */
+    public $name;
+    /**
+     * @var string
+     */
+    public $created_at;
+    /**
+     * @var string
+     */
+    public $updated_at;
+    /**
+     * @var Team[]
+     */
+    public $teams;
 }

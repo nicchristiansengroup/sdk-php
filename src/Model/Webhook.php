@@ -6,5 +6,32 @@ use Easir\SDK\Response;
 
 class Webhook extends Response
 {
-    public $id, $user_id, $target_url, $webhook_event, $verification_token, $created_at, $updated_at;
+    /**
+     * @var int
+     */
+    public $id;
+    /**
+     * @var int
+     */
+    public $user_id;
+    /**
+     * @var string
+     */
+    public $target_url;
+    /**
+     * @var WebhookEvent
+     */
+    public $webhook_event;
+    /**
+     * @var string
+     */
+    public $verification_token;
+    /**
+     * @var string
+     */
+    public $created_at;
+    /**
+     * @var string
+     */
+    public $updated_at;
 }

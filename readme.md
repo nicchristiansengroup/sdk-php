@@ -1,6 +1,6 @@
 # EASI'R PHP SDK
 
-Current version `0.11.0`
+Current version `0.13.0`
 Supported API version `2.21.1`
 
 The purpose of this SDK is to standardise how our apps communicate with the EASI'R API.

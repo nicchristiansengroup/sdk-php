@@ -6,5 +6,16 @@ use Easir\SDK\Model;
 
 class Step extends Model
 {
-    public $id, $sort_order, $name;
+    /**
+     * @var string
+     */
+    public $id;
+    /**
+     * @var int
+     */
+    public $sort_order;
+    /**
+     * @var string
+     */
+    public $name;
 }

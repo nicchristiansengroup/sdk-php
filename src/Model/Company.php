@@ -70,4 +70,8 @@ class Company extends Response
      * @var string
      */
     public $updated_at;
+    /**
+     * @var array
+     */
+    public $settings;
 }

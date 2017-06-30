@@ -36,6 +36,4 @@ class LocalizationTypes extends Response
      * @var Country[]
      */
     public $countries;
-
-    public $plan;
 }

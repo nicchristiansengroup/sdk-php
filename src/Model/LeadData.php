@@ -16,8 +16,8 @@ class LeadData extends Model
     public $value;
 
     /**
-     * @param string
-     * @param string
+     * @param string $key
+     * @param string $value
      * @return self
      */
     public static function create($key, $value) {

@@ -6,8 +6,10 @@ use Easir\SDK\Response;
 
 class User extends Response
 {
-    protected $collections = ['roles' => 'role'];
-
+    /**
+     * @var array
+     */
+    protected $collections = ['roles' => 'role', 'teams' => 'team'];
     /**
      * @var int
      */
@@ -68,8 +70,40 @@ class User extends Response
      * @var string
      */
     public $updated_at;
+    /**
+     * @var Team
+     */
     public $team;
+    /**
+     * @var Team[]
+     */
+    public $teams;
+    /**
+     * @var string[]
+     */
+    public $rights;
+    /**
+     * @var Signature
+     */
     public $signature;
+    /**
+     * @var Company
+     */
     public $company;
-    public $settings;
-}
+    /**
+     * @var array
+     */
+    public $subscriptions;
+    /**
+     * @var string[]
+     */
+    public $features;
+    /**
+     * @var bool
+     */
+    public $sso;
+    /**
+     * @var array
+     */
+    public $level;
+

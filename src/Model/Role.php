@@ -14,7 +14,6 @@ class Role extends Model
      * @var string
      */
     public $name;
-    public $access_teams;
     /**
      * @var string[]
      */

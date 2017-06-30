@@ -7,6 +7,10 @@ use Easir\SDK\Model;
 class Group extends Model
 {
     /**
+     * @var array
+     */
+    protected $collections = ['teams' => 'team'];
+    /**
      * @var int
      */
     public $id;
@@ -22,4 +26,8 @@ class Group extends Model
      * @var string
      */
     public $updated_at;
+    /**
+     * @var Team[]
+     */
+    public $teams;
 }

@@ -58,6 +58,9 @@ class Team extends Response
      * @var Locale
      */
     public $locale;
+    /**
+     * @var Group
+     */
     public $group;
     /**
      * @var string|null

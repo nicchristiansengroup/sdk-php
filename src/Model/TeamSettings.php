@@ -11,6 +11,9 @@ class TeamSettings extends Model
      */
     protected $collections = ['escalation_active' => 'escalation_active'];
 
+    /**
+     * @var array
+     */
     public $users;
     /**
      * @var bool

@@ -74,4 +74,8 @@ class Company extends Response
      * @var array
      */
     public $settings;
+    /**
+     * @var int
+     */
+    public $user_count;
 }

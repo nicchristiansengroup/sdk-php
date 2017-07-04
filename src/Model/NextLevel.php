@@ -4,14 +4,14 @@ namespace Easir\SDK\Model;
 
 use Easir\SDK\Response;
 
-class Plan extends Response
+class NextLevel extends Response
 {
-    /**
-     * @var int
-     */
-    public $id;
     /**
      * @var string
      */
     public $name;
+    /**
+     * @var int
+     */
+    public $level_threshold;
 }

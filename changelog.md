@@ -1,3 +1,7 @@
+0.14.0
+Removed GET /companies
+Added Level class for User
+
 0.13.0
 Added support for Attachments
 Added support for POST /automated-communications

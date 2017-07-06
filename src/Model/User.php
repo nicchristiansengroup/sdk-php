@@ -103,7 +103,7 @@ class User extends Response
      */
     public $sso;
     /**
-     * @var array
+     * @var Level
      */
     public $level;
 }

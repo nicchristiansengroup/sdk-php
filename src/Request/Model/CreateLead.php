@@ -35,11 +35,11 @@ class CreateLead extends Model
      */
     public $lead_type_id;
     /**
-     * @var integer
+     * @var int
      */
     public $team_id;
     /**
-     * @var integer
+     * @var int
      */
     public $agency_team_id;
     /**
@@ -51,11 +51,15 @@ class CreateLead extends Model
      */
     public $interest;
     /**
+     * @var string
+     */
+    public $lead_user;
+    /**
      * @var array
      */
     public $lead_data;
     /**
-     * @var integer
+     * @var int
      */
     public $external_weight;
 }

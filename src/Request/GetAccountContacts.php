@@ -4,8 +4,8 @@ namespace Easir\SDK\Request;
 
 use Easir\SDK\Exception\RequestException;
 use Easir\SDK\Request;
-use Easir\SDK\Request\Model\GetAccountContacts as GetModel;
-use Easir\SDK\Response\GetContacts as GetResponse;
+use Easir\SDK\Request\Model\GetAccountContacts as GetAccountContactsModel;
+use Easir\SDK\Response\GetContacts;
 
 class GetAccountContacts extends Request
 {
@@ -20,11 +20,11 @@ class GetAccountContacts extends Request
     /**
      * @var string
      */
-    public $responseClass = GetResponse::class;
+    public $responseClass = GetContacts::class;
     /**
      * @var string
      */
-    protected $modelClass = GetModel::class;
+    protected $modelClass = GetAccountContactsModel::class;
 
     /**
      * @throws RequestException

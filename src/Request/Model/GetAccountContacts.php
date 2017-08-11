@@ -2,16 +2,12 @@
 
 namespace Easir\SDK\Request\Model;
 
-class ListCompanyTeams extends Search
+class GetAccountContacts extends Search
 {
-    /**
-     * @var int
-     */
-    public $company_id;
     /**
      * @var string
      */
-    public $team_type = '';
+    public $account_id;
     /**
      * @var string
      */
@@ -19,5 +15,5 @@ class ListCompanyTeams extends Search
     /**
      * @var string
      */
-    public $sort_direction = 'desc';
+    public $sort_direction = '';
 }

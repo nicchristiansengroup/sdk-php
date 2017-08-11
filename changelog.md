@@ -1,3 +1,13 @@
+0.15.0
+Removed /Model/LeadData it did not map lead data correctly
+Added more parameters for GET /accounts and renamed class
+Added support for GET /accounts/{accountId}/contacts
+Renamed field {id} to {company_id} in ListCompanyTeams classes 
+
+0.14.0
+Removed GET /companies
+Added Level class for User
+
 0.13.0
 Added support for Attachments
 Added support for POST /automated-communications

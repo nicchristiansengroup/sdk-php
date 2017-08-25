@@ -12,7 +12,7 @@ class GetLeadTypes extends Request
     /**
      * @var string
      */
-    protected $url = '/lead-types?page=%d&per_page=%d&q=%s';
+    protected $url = '/lead-types?page=%d&per_page=%d&q=%s&include_bundled=%d&enable_escalation=%d';
     /**
      * @var string
      */
@@ -37,7 +37,9 @@ class GetLeadTypes extends Request
         return sprintf(parent::getUrl(),
             (int)$this->model->page,
             (int)$this->model->perPage,
-            urlencode((string)$this->model->searchTerm)
+            urlencode((string)$this->model->searchTerm),
+            (int)$this->model->include_bundled,
+            (int)$this->model->enable_escalation
         );
     }
 }

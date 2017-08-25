@@ -4,15 +4,15 @@ namespace Easir\SDK\Request;
 
 use Easir\SDK\Exception\RequestException;
 use Easir\SDK\Request;
-use Easir\SDK\Request\Model\GetLeadTypes as GetLeadTypesModel;
-use Easir\SDK\Response\GetLeadTypes as GetLeadTypesResponse;
+use Easir\SDK\Request\Model\GetAccounts as GetAccountsModel;
+use Easir\SDK\Response\ListCompanyAccounts;
 
-class GetLeadTypes extends Request
+class GetAccounts extends Request
 {
     /**
      * @var string
      */
-    protected $url = '/lead-types?page=%d&per_page=%d&q=%s&include_bundled=%d&enable_escalation=%d';
+    protected $url = '/accounts?page=%d&per_page=%d&q=%s&type=%s&sort_by=%s&sort_direction=%s';
     /**
      * @var string
      */
@@ -20,11 +20,11 @@ class GetLeadTypes extends Request
     /**
      * @var string
      */
-    public $responseClass = GetLeadTypesResponse::class;
+    public $responseClass = ListCompanyAccounts::class;
     /**
      * @var string
      */
-    protected $modelClass = GetLeadTypesModel::class;
+    protected $modelClass = GetAccountsModel::class;
 
     /**
      * @throws RequestException
@@ -38,8 +38,9 @@ class GetLeadTypes extends Request
             (int)$this->model->page,
             (int)$this->model->perPage,
             urlencode((string)$this->model->searchTerm),
-            (int)$this->model->include_bundled,
-            (int)$this->model->enable_escalation
+            urlencode((string)$this->model->type),
+            urlencode((string)$this->model->sort_by),
+            urlencode((string)$this->model->sort_direction)
         );
     }
 }

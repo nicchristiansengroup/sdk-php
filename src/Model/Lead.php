@@ -10,7 +10,6 @@ class Lead extends Response
      * @var array
      */
     protected $collections = [
-        'lead_data' => 'lead_data',
         'rejections' => 'rejection',
         'acceptions' => 'acception',
         'assignments' => 'assignment',
@@ -67,7 +66,7 @@ class Lead extends Response
      */
     public $lead_user;
     /**
-     * @var LeadData[]
+     * @var array
      */
     public $lead_data;
     /**

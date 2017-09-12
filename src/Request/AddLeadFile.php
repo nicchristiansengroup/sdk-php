@@ -26,7 +26,7 @@ class AddLeadFile extends Request
      */
     protected $modelClass = RequestModel\AddLeadFile::class;
     /**
-     * @var string[]
+     * @var array
      */
     public $options = ['header' => ['Content-Type' => 'multipart/form-data']];
 
@@ -36,6 +36,8 @@ class AddLeadFile extends Request
      */
     public function __construct(RequestModel $model = null)
     {
+        $this->checkModel();
+
         parent::__construct($model);
 
         $this->options['multipart'][] = [
@@ -46,13 +48,10 @@ class AddLeadFile extends Request
     }
 
     /**
-     * @throws RequestException
      * @return string
      */
     public function getUrl()
     {
-        $this->checkModel();
-
         return sprintf(parent::getUrl(), (string)$this->model->id);
     }
 }

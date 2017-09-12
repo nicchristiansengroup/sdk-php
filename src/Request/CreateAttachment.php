@@ -27,33 +27,32 @@ class CreateAttachment extends Request
      */
     protected $modelClass = CreateAttachmentModel::class;
     /**
-     * @var string[]
+     * @var array
      */
     public $options = ['header' => ['Content-Type' => 'multipart/form-data']];
 
     /**
-     * @param RequestModel $model
+     * @param RequestModel|null $model
      * @throws RequestException
      */
     public function __construct(RequestModel $model = null)
     {
+        $this->checkModel();
+
         parent::__construct($model);
 
         $this->options['multipart'][] = [
-             'name' => $model->name,
-             'contents' => $model->contents,
-             'filename' => $model->filename,
+            'name' => $model->name,
+            'contents' => $model->contents,
+            'filename' => $model->filename,
         ];
     }
 
     /**
-     * @throws RequestException
      * @return string
      */
     public function getUrl()
     {
-        $this->checkModel();
-
         return sprintf(parent::getUrl(), (string)$this->model->belongs_to);
     }
 }

@@ -31,7 +31,7 @@ class AddLeadFile extends Request
     public $options = ['header' => ['Content-Type' => 'multipart/form-data']];
 
     /**
-     * @param RequestModel $model
+     * @param RequestModel|null $model
      * @throws RequestException
      */
     public function __construct(RequestModel $model = null)

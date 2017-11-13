@@ -12,7 +12,7 @@ class GetTeam extends Request
     /**
      * @var string
      */
-    protected $url = '/teams/%d';
+    protected $url = '/companies/%d/teams/%d';
     /**
      * @var string
      */
@@ -34,6 +34,6 @@ class GetTeam extends Request
     {
         $this->checkModel();
 
-        return sprintf(parent::getUrl(), (int)$this->model->id);
+        return sprintf(parent::getUrl(), (int)$this->model->company_id, (int)$this->model->id);
     }
 }

@@ -7,7 +7,7 @@ use Easir\SDK\Request\Model;
 class Auth extends Model
 {
     /**
-     * @var integer
+     * @var int
      */
     public $client_id;
     /**

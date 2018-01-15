@@ -1,3 +1,11 @@
+0.16.0
+Changed Client to return unhandled/raw response
+Added support for PUT /groups/{group_id}/teams/{team_id}
+Added support for PUT /teams/{team_id}/users/{user_id}
+Added support for POST /groups
+Added support for DELETE /companies/{company_id}/users/{user_id}
+Added support for DELETE /teams/{team_id}/users/{user_id}
+
 0.15.0
 Removed /Model/LeadData it did not map lead data correctly
 Added more parameters for GET /accounts and renamed class

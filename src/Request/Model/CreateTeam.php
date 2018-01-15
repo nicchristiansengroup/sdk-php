@@ -68,4 +68,8 @@ class CreateTeam extends Model
      * @var bool
      */
     public $use_social_lookup;
+    /**
+     * @var array
+     */
+    public $fields;
 }

@@ -1,3 +1,7 @@
+0.17.0
+Added support for GET /accounts/{account_id}
+Added support for GET /accounts/{account_id}/cases
+
 0.16.0
 Changed Client to return unhandled/raw response
 Added support for PUT /groups/{group_id}/teams/{team_id}

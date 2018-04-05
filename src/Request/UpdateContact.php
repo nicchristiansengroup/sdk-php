@@ -34,6 +34,10 @@ class UpdateContact extends Request
     {
         $this->checkModel();
 
-        return sprintf(parent::getUrl(), $this->model->account_id, $this->model->contact_id);
+        return sprintf(
+            parent::getUrl(),
+            urlencode((string)$this->model->old_account_id),
+            urlencode((string)$this->model->contact_id)
+        );
     }
 }

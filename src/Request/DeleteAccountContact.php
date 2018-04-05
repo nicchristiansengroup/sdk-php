@@ -4,27 +4,22 @@ namespace Easir\SDK\Request;
 
 use Easir\SDK\Exception\RequestException;
 use Easir\SDK\Request;
-use Easir\SDK\Request\Model\UpdateConsent as UpdateConsentRequestModel;
-use Easir\SDK\Model\Consent;
+use Easir\SDK\Request\Model\GetContact as DeleteContactRequestModel;
 
-class UpdateConsent extends Request
+class DeleteAccountContact extends Request
 {
     /**
      * @var string
      */
-    protected $url = '/accounts/%s/contacts/%s/consent';
+    protected $url = '/accounts/%s/contacts/%s';
     /**
      * @var string
      */
-    public $method = 'PUT';
+    public $method = 'DELETE';
     /**
      * @var string
      */
-    public $responseClass = Consent::class;
-    /**
-     * @var string
-     */
-    protected $modelClass = UpdateConsentRequestModel::class;
+    protected $modelClass = DeleteContactRequestModel::class;
 
     /**
      * @throws RequestException
@@ -34,8 +29,7 @@ class UpdateConsent extends Request
     {
         $this->checkModel();
 
-        return sprintf(
-            parent::getUrl(),
+        return sprintf(parent::getUrl(),
             urlencode((string)$this->model->account_id),
             urlencode((string)$this->model->contact_id)
         );

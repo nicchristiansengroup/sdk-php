@@ -1,3 +1,7 @@
+0.19.0
+Added support for DELETE /accounts/:account_id/contacts/:contact_id
+Added support for PUT /accounts/:account_id/contacts/:contact_id
+
 0.18.0
 Added support for PUT /accounts/:account_id/contacts/:contact_id/consent
 Added support for GET /accounts/:account_id/contacts/:contact_id

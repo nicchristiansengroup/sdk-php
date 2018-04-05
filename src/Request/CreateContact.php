@@ -34,6 +34,6 @@ class CreateContact extends Request
     {
         $this->checkModel();
 
-        return sprintf(parent::getUrl(), $this->model->account_id);
+        return sprintf(parent::getUrl(), urlencode((string)$this->model->account_id));
     }
 }

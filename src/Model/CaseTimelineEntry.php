@@ -23,7 +23,7 @@ class CaseTimelineEntry extends Response
      */
     public $user;
     /**
-     * @var array
+     * @var CaseTimelineEntryData
      */
     public $data;
     /**

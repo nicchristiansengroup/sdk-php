@@ -11,7 +11,7 @@ class DeleteUser extends Request
     /**
      * @var string
      */
-    protected $url = '/companies/%d/users/%d?assign_to=%d';
+    protected $url = '/companies/%d/users/%d%s';
     /**
      * @var string
      */
@@ -29,6 +29,11 @@ class DeleteUser extends Request
     {
         $this->checkModel();
 
-        return sprintf(parent::getUrl(), (int)$this->model->companyId, (int)$this->model->id, (int)$this->model->assignTo);
+        $suffix = '';
+        if (!empty($this->model->assignTo)) {
+            $suffix = sprintf('?assign_to=%d', (int)$this->model->assignTo);
+        }
+
+        return sprintf(parent::getUrl(), (int)$this->model->companyId, (int)$this->model->id, $suffix);
     }
 }

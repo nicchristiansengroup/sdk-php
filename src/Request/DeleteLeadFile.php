@@ -4,26 +4,22 @@ namespace Easir\SDK\Request;
 
 use Easir\SDK\Exception\RequestException;
 use Easir\SDK\Request;
-use Easir\SDK\Response\ListFields as ListFieldsResponse;
+use Easir\SDK\Request\Model\GetById;
 
-class GetFields extends Request
+class DeleteLeadFile extends Request
 {
     /**
      * @var string
      */
-    protected $url = '/fields';
+    protected $url = '/leads/%s/files/%s';
     /**
      * @var string
      */
-    protected $urlSuffix = '';
+    public $method = 'DELETE';
     /**
      * @var string
      */
-    public $method = 'GET';
-    /**
-     * @var string
-     */
-    public $responseClass = ListFieldsResponse::class;
+    protected $modelClass = GetById::class;
 
     /**
      * @throws RequestException
@@ -31,6 +27,8 @@ class GetFields extends Request
      */
     public function getUrl()
     {
-        return $this->url . $this->urlSuffix;
+        $this->checkModel();
+
+        return sprintf(parent::getUrl(), (string)$this->model->id, (string)$this->model->file);
     }
 }

@@ -4,6 +4,7 @@ namespace Easir\SDK;
 
 trait PopulatableFromData
 {
+    protected $embedded = array();
     protected $collections = array();
 
     /**
@@ -26,7 +27,11 @@ trait PopulatableFromData
         foreach ($data as $paramName => $paramValue) {
             if (property_exists($this, $paramName)) {
                 if (is_object($paramValue)) {
-                    $this->$paramName = Model::createIfExists($paramName, $paramValue);
+                    if (in_array($paramName, array_keys($this->embedded))) {
+                        $this->$paramName = Model::createIfExists($this->embedded[$paramName], $paramValue);
+                    } else {
+                        $this->$paramName = Model::createIfExists($paramName, $paramValue);
+                    }
                 } elseif (in_array($paramName, array_keys($this->collections)) && is_array($paramValue)) {
                     // Could this be a collection?
                     $this->$paramName = array();

@@ -2,18 +2,18 @@
 
 namespace Easir\SDK\Response;
 
-use Easir\SDK\Model\Activity;
+use Easir\SDK\Model\Product;
 use Easir\SDK\Model\Pagination;
 use Easir\SDK\Response;
 
-class ListActivities extends Response
+class ListProducts extends Response
 {
     /**
      * @var array
      */
-    protected $collections = ['data' => 'activity'];
+    protected $collections = ['data' => 'product'];
     /**
-     * @var Activity[]
+     * @var Product[]
      */
     public $data;
     /**
@@ -21,3 +21,6 @@ class ListActivities extends Response
      */
     public $pagination;
 }
+
+
+

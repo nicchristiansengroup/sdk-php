@@ -1,5 +1,5 @@
 {
-    "name": "easir/sdk",
+    "name": "easir/sdk-custom",
     "version": "0.14.0",
     "type": "library",
     "autoload": {
